@@ -1,41 +1,326 @@
-{
-  "musculos": [
+[
     {
-      "nombre": "Pectorales",
-      "zonas": [
-        {
-          "nombre": "Pectoral superior",
-          "explicacion": "Parte alta del pecho, se activa en movimientos inclinados.",
-          "mejor_ejercicio": "Press inclinado con barra"
-        },
-        {
-          "nombre": "Pectoral medio",
-          "explicacion": "Zona central del pecho, principal en press plano.",
-          "mejor_ejercicio": "Press de banca"
-        },
-        {
-          "nombre": "Pectoral inferior",
-          "explicacion": "Parte baja del pecho, trabaja mejor en movimientos declinados.",
-          "mejor_ejercicio": "Press declinado"
-        }
-      ],
-      "recuperacion": "Dejar al menos 48 horas entre sesiones intensas. Estiramientos y movilidad ayudan."
+        "Nombre": "Pectoral",
+        "Localizacion": "Parte frontal del tórax",
+        "Funcion": "Se activa en movimientos de empuje, aducción del brazo, rotación interna del hombro y flexión del brazo hacia adelante.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Pectoral superior",
+                "Localizacion": "Parte alta del tórax, justo debajo de las clavículas",
+                "Ejercicios": [
+                    "Press inclinado (30-45°)",
+                    "Aperturas inclinadas"
+                ]
+            },
+            {
+                "Nombre": "Pectoral medio",
+                "Localizacion": "Zona central del pecho",
+                "Ejercicios": [
+                    "Press de plano",
+                    "Aperturas planas"
+                ]
+            },
+            {
+                "Nombre": "Pectoral inferior",
+                "Localizacion": "Parte baja del pecho",
+                "Ejercicios": [
+                    "Press declinado",
+                    "Aperturas declinadas"
+                ]
+            }
+        ]
     },
     {
-      "nombre": "Bíceps",
-      "zonas": [
-        {
-          "nombre": "Cabeza larga",
-          "explicacion": "Parte externa del bíceps, visible desde el frente.",
-          "mejor_ejercicio": "Curl inclinado con mancuernas"
-        },
-        {
-          "nombre": "Cabeza corta",
-          "explicacion": "Parte interna, más visible desde el frente y flexiones cerradas.",
-          "mejor_ejercicio": "Curl con barra Z"
-        }
-      ],
-      "recuperacion": "48 horas de descanso, evitar sobreentrenar. Puedes hacer estiramientos con polea."
+        "Nombre": "Bíceps",
+        "Localizacion": "Parte frontal del brazo superior",
+        "Funcion": "Se activa al flexionar el codo y supinar el antebrazo",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Cabeza larga",
+                "Localizacion": "Parte externa del bíceps",
+                "Ejercicios": [
+                    "Curls inclinados",
+                    "Dominadas supinas"
+                ]
+            },
+            {
+                "Nombre": "Cabeza corta",
+                "Localizacion": "Parte interna y frontal del brazo",
+                "Ejercicios": [
+                    "Curl con barra Z",
+                    "Curl predicador"
+                ]
+            },
+            {
+                "Nombre": "Cabeza braquial",
+                "Localizacion": "Parte interna del bíceps",
+                "Ejercicios": [
+                    "Curl martillo"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Tríceps",
+        "Localizacion": "Parte posterior del brazo superior",
+        "Funcion": "Se activa al extender el codo. Importante en movimientos de empuje.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Cabeza larga",
+                "Localizacion": "Parte interna y posterior del brazo",
+                "Ejercicios": [
+                    "Fondos en paralelas",
+                    "Extensiones sobre la cabeza con mancuernas"
+                ]
+            },
+            {
+                "Nombre": "Cabeza lateral",
+                "Localizacion": "Parte externa del tríceps, visible lateralmente",
+                "Ejercicios": [
+                    "Extensiones con cuerda",
+                    "Press de tríceps en polea"
+                ]
+            },
+            {
+                "Nombre": "Cabeza medial",
+                "Localizacion": "Profunda, debajo de las otras dos cabezas",
+                "Ejercicios": [
+                    "Press cerrado",
+                    "Fondos en banco"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Deltoides",
+        "Localizacion": "Parte superior y lateral del hombro",
+        "Funcion": "Se activa en elevaciones, empujes verticales y estabilización del brazo.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Deltoides anterior",
+                "Localizacion": "Parte frontal del hombro",
+                "Ejercicios": [
+                    "Press militar",
+                    "Elevaciones frontales"
+                ]
+            },
+            {
+                "Nombre": "Deltoides lateral",
+                "Localizacion": "Parte externa del hombro",
+                "Ejercicios": [
+                    "Elevaciones laterales",
+                    "Press con mancuernas"
+                ]
+            },
+            {
+                "Nombre": "Deltoides posterior",
+                "Localizacion": "Parte trasera del hombro",
+                "Ejercicios": [
+                    "Pájaros con mancuernas",
+                    "Face pulls"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Dorsal",
+        "Localizacion": "Zona media e inferior de la espalda",
+        "Funcion": "Permite jalar hacia el cuerpo y extender el hombro hacia atrás.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Dorsal superior",
+                "Localizacion": "Zona alta de la espalda media, bajo los omóplatos",
+                "Ejercicios": [
+                    "Jalones al pecho",
+                    "Dominadas"
+                ]
+            },
+            {
+                "Nombre": "Dorsal inferior",
+                "Localizacion": "Zona inferior de la espalda",
+                "Ejercicios": [
+                    "Remo con barra",
+                    "Peso muerto"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Espalda alta",
+        "Localizacion": "Parte superior de la espalda, entre los omóplatos y cuello",
+        "Funcion": "Estabilización escapular y retracción de los omóplatos.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Trapecio superior",
+                "Localizacion": "Zona entre cuello y hombros",
+                "Ejercicios": [
+                    "Encogimientos con mancuernas",
+                    "Remo al cuello"
+                ]
+            },
+            {
+                "Nombre": "Trapecio medio",
+                "Localizacion": "Centro de la espalda alta",
+                "Ejercicios": [
+                    "Face pulls",
+                    "Remo en máquina"
+                ]
+            },
+            {
+                "Nombre": "Romboides",
+                "Localizacion": "Debajo del trapecio, entre escápulas",
+                "Ejercicios": [
+                    "Remo con agarre cerrado",
+                    "Remo inclinado con mancuernas"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Antebrazo",
+        "Localizacion": "Zona entre el codo y la muñeca",
+        "Funcion": "Flexión y extensión de la muñeca, pronación y supinación del antebrazo.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Flexores del antebrazo",
+                "Localizacion": "Parte interna del antebrazo",
+                "Ejercicios": [
+                    "Curl de muñeca con barra",
+                    "Curl inverso"
+                ]
+            },
+            {
+                "Nombre": "Extensores del antebrazo",
+                "Localizacion": "Parte externa del antebrazo",
+                "Ejercicios": [
+                    "Extensiones de muñeca",
+                    "Curl inverso con barra Z"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Cuádriceps",
+        "Localizacion": "Parte frontal del muslo",
+        "Funcion": "Extensión de la rodilla y estabilización de la cadera al caminar o correr.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Vasto externo",
+                "Localizacion": "Parte externa del muslo",
+                "Ejercicios": [
+                    "Sentadilla",
+                    "Prensa de piernas"
+                ]
+            },
+            {
+                "Nombre": "Vasto interno",
+                "Localizacion": "Parte interna del muslo",
+                "Ejercicios": [
+                    "Sentadilla profunda",
+                    "Prensa con pies juntos"
+                ]
+            },
+            {
+                "Nombre": "Recto femoral",
+                "Localizacion": "Centro del muslo, entre los vastos",
+                "Ejercicios": [
+                    "Extensiones de piernas",
+                    "Zancadas"
+                ]
+            },
+            {
+                "Nombre": "Vasto intermedio",
+                "Localizacion": "Debajo del recto femoral",
+                "Ejercicios": [
+                    "Sentadilla frontal",
+                    "Prensa inclinada"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Isquiotibiales (Femoral)",
+        "Localizacion": "Parte posterior del muslo",
+        "Funcion": "Flexión de rodilla y extensión de cadera.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Bíceps femoral",
+                "Localizacion": "Parte externa del muslo posterior",
+                "Ejercicios": [
+                    "Curl femoral acostado",
+                    "Peso muerto rumano"
+                ]
+            },
+            {
+                "Nombre": "Semitendinoso",
+                "Localizacion": "Parte media del muslo posterior",
+                "Ejercicios": [
+                    "Peso muerto con piernas rígidas",
+                    "Buenos días"
+                ]
+            },
+            {
+                "Nombre": "Semimembranoso",
+                "Localizacion": "Parte interna del muslo posterior",
+                "Ejercicios": [
+                    "Curl femoral sentado",
+                    "Hip thrust"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Glúteo",
+        "Localizacion": "Región posterior de la pelvis",
+        "Funcion": "Extensión, abducción y rotación externa de la cadera.",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Glúteo mayor",
+                "Localizacion": "Principal masa del glúteo",
+                "Ejercicios": [
+                    "Hip thrust",
+                    "Peso muerto"
+                ]
+            },
+            {
+                "Nombre": "Glúteo medio",
+                "Localizacion": "Zona lateral superior del glúteo",
+                "Ejercicios": [
+                    "Abducciones de cadera",
+                    "Monster walks con banda"
+                ]
+            },
+            {
+                "Nombre": "Glúteo menor",
+                "Localizacion": "Debajo del glúteo medio",
+                "Ejercicios": [
+                    "Elevaciones laterales acostado",
+                    "Abducción en polea"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Gemelo",
+        "Localizacion": "Parte posterior e inferior de la pierna",
+        "Funcion": "Flexión plantar del tobillo (empujar con los pies).",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Gastrocnemio",
+                "Localizacion": "Parte alta y visible del gemelo",
+                "Ejercicios": [
+                    "Elevación de talones de pie",
+                    "Saltos con peso"
+                ]
+            },
+            {
+                "Nombre": "Sóleo",
+                "Localizacion": "Debajo del gastrocnemio",
+                "Ejercicios": [
+                    "Elevación de talones sentado",
+                    "Prensa de piernas con punta de pies"
+                ]
+            }
+        ]
     }
-  ]
-}
+]
