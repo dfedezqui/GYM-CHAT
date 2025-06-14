@@ -1,6 +1,6 @@
 [
     {
-        "Nombre": "Press de banca plano",
+        "Nombre": "Press plano",
         "Musculo_principal": "Pectoral",
         "Musculo_principal_concreto": "Pectoral medio",
         "Musculos_secundarios": [
@@ -102,7 +102,7 @@
                 "Puntos_debiles": "Menor activación de músculos estabilizadores."
             }
         ],
-        "Recomendacion_de_orden": "Segundo o tercer ejercicio de pecho."
+        "Recomendacion_de_orden": "de segundo o tercer ejercicio de pecho."
     },
     {
         "Nombre": "Aperturas planas",
@@ -141,7 +141,7 @@
                 "Puntos_debiles": "Puede requerir mayor control y coordinación."
             }
         ],
-        "Recomendacion_de_orden": "Después de presses en rutina de pecho."
+        "Recomendacion_de_orden": "después de presses en rutina de pecho."
     },
     {
         "Nombre": "Aperturas inclinadas",
@@ -180,7 +180,7 @@
                 "Puntos_debiles": "Puede requerir mayor control y coordinación."
             }
         ],
-        "Recomendacion_de_orden": "Segundo o tercer ejercicio para pectoral superior."
+        "Recomendacion_de_orden": "de segundo o tercer ejercicio para pectoral superior."
     },
     {
         "Nombre": "Aperturas declinadas",
@@ -222,7 +222,7 @@
         "Recomendacion_de_orden": "Final de rutina de pecho para enfocar parte baja."
     },
     {
-        "Nombre": "Extensión de tríceps en polea",
+        "Nombre": "Extensión de tríceps",
         "Musculo_principal": "Tríceps",
         "Musculo_principal_concreto": "Cabeza lateral del tríceps",
         "Musculos_secundarios": [
@@ -236,16 +236,10 @@
         "Ejecucion": "Extender los brazos desde un ángulo de 90° hasta casi bloqueo sin mover los codos.",
         "Variantes": [
             {
-                "Tipo": "Cuerda",
+                "Tipo": "Polea alta",
                 "Descripcion": "Permite separar al final para mayor activación.",
                 "Puntos_fuertes": "Mejor contracción al final del movimiento.",
                 "Puntos_debiles": "Menor control con cargas altas."
-            },
-            {
-                "Tipo": "Barra recta",
-                "Descripcion": "Más carga posible, más estabilidad.",
-                "Puntos_fuertes": "Ideal para ganar fuerza.",
-                "Puntos_debiles": "Menor aislamiento del tríceps."
             },
             {
                 "Tipo": "Máquina",
@@ -258,16 +252,9 @@
                 "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
                 "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
                 "Puntos_debiles": "Puede requerir mayor control y coordinación."
-            },
-            {
-                "Tipo": "Polea alta",
-                "Descripcion": "Desde la polea alta, extender completamente los brazos hacia abajo.",
-                "Puntos_fuertes": "Muy buen aislamiento y control.",
-                "Puntos_debiles": "Puede cargar menos que otros ejercicios compuestos.",
-                "Cuando_recomendarla": "Ideal para aislamiento o fases de definición."
             }
         ],
-        "Recomendacion_de_orden": "Intermedio o final en rutinas de brazos o empuje."
+        "Recomendacion_de_orden": "Intermedio o final en rutinas de brazos o empuje, debido a que es un ejercicio de aislamiento."
     },
     {
         "Nombre": "Extensión catana",
