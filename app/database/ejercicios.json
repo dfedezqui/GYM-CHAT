@@ -1,0 +1,42 @@
+{
+  "ejercicios": [
+    {
+      "nombre": "Press de banca",
+      "musculo": "Pectorales",
+      "zona_musculo": "Pectoral medio",
+      "variantes": [
+        {
+          "tipo": "Barra",
+          "caracteristicas": "Movimiento libre, mayor activación estabilizadora."
+        },
+        {
+          "tipo": "Máquina guiada",
+          "caracteristicas": "Mayor seguridad y aislamiento del músculo."
+        },
+        {
+          "tipo": "Mancuernas",
+          "caracteristicas": "Mayor rango de movimiento y activación unilateral."
+        }
+      ]
+    },
+    {
+      "nombre": "Curl de bíceps",
+      "musculo": "Bíceps",
+      "zona_musculo": "Cabeza larga del bíceps",
+      "variantes": [
+        {
+          "tipo": "Mancuernas",
+          "caracteristicas": "Permite alternar brazos y ajustar ángulo de agarre."
+        },
+        {
+          "tipo": "Polea",
+          "caracteristicas": "Tensión constante durante todo el recorrido."
+        },
+        {
+          "tipo": "Máquina de curl",
+          "caracteristicas": "Aislamiento total del bíceps, ideal para principiantes."
+        }
+      ]
+    }
+  ]
+}
