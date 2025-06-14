@@ -1,42 +1,1121 @@
-{
-  "ejercicios": [
+[
     {
-      "nombre": "Press de banca",
-      "musculo": "Pectorales",
-      "zona_musculo": "Pectoral medio",
-      "variantes": [
-        {
-          "tipo": "Barra",
-          "caracteristicas": "Movimiento libre, mayor activación estabilizadora."
-        },
-        {
-          "tipo": "Máquina guiada",
-          "caracteristicas": "Mayor seguridad y aislamiento del músculo."
-        },
-        {
-          "tipo": "Mancuernas",
-          "caracteristicas": "Mayor rango de movimiento y activación unilateral."
-        }
-      ]
+        "Nombre": "Press de banca plano",
+        "Musculo_principal": "Pectoral",
+        "Musculo_principal_concreto": "Pectoral medio",
+        "Musculos_secundarios": [
+            "Tríceps",
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Cabeza lateral del tríceps",
+            "Deltoides anterior"
+        ],
+        "Ejecucion": "Bajar la barra controladamente hasta el pecho y empujar hacia arriba hasta extender los brazos.",
+        "Variantes": [
+            {
+                "Tipo": "Barra",
+                "Descripcion": "Versión clásica realizada en banco plano con barra.",
+                "Puntos_fuertes": "Excelente para desarrollar fuerza máxima.",
+                "Puntos_debiles": "Menos eficiente para aislar el pectoral en hipertrofia."
+            },
+            {
+                "Tipo": "Mancuernas",
+                "Descripcion": "Permite mayor rango de movimiento y trabajo unilateral.",
+                "Puntos_fuertes": "Mejor activación muscular individual.",
+                "Puntos_debiles": "Más difícil controlar cargas pesadas."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            }
+        ],
+        "Recomendacion_de_orden": "Primer ejercicio del día, especialmente en rutinas de pecho o empuje."
     },
     {
-      "nombre": "Curl de bíceps",
-      "musculo": "Bíceps",
-      "zona_musculo": "Cabeza larga del bíceps",
-      "variantes": [
-        {
-          "tipo": "Mancuernas",
-          "caracteristicas": "Permite alternar brazos y ajustar ángulo de agarre."
-        },
-        {
-          "tipo": "Polea",
-          "caracteristicas": "Tensión constante durante todo el recorrido."
-        },
-        {
-          "tipo": "Máquina de curl",
-          "caracteristicas": "Aislamiento total del bíceps, ideal para principiantes."
-        }
-      ]
+        "Nombre": "Press inclinado",
+        "Musculo_principal": "Pectoral",
+        "Musculo_principal_concreto": "Pectoral superior",
+        "Musculos_secundarios": [
+            "Tríceps",
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides anterior",
+            "Cabeza lateral del tríceps"
+        ],
+        "Ejecucion": "Bajar la barra/mancuernas hacia la parte superior del pecho en banco inclinado y empujar hacia arriba.",
+        "Variantes": [
+            {
+                "Tipo": "Barra",
+                "Descripcion": "Más peso, enfoque en parte superior del pecho.",
+                "Puntos_fuertes": "Gran carga posible.",
+                "Puntos_debiles": "Menor rango comparado con mancuernas."
+            },
+            {
+                "Tipo": "Mancuernas",
+                "Descripcion": "Mayor rango de movimiento, trabajo unilateral.",
+                "Puntos_fuertes": "Más activación muscular.",
+                "Puntos_debiles": "Menos peso manejable."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            }
+        ],
+        "Recomendacion_de_orden": "Primero o segundo en rutina de pecho."
+    },
+    {
+        "Nombre": "Press declinado",
+        "Musculo_principal": "Pectoral",
+        "Musculo_principal_concreto": "Pectoral inferior",
+        "Musculos_secundarios": [
+            "Tríceps",
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Cabeza lateral del tríceps",
+            "Deltoides anterior"
+        ],
+        "Ejecucion": "Bajar la barra hacia la parte inferior del pecho y empujar hacia arriba.",
+        "Variantes": [
+            {
+                "Tipo": "Barra",
+                "Descripcion": "Permite gran carga y enfoque en parte baja.",
+                "Puntos_fuertes": "Aumenta la parte inferior del pecho.",
+                "Puntos_debiles": "Difícil de montar solo."
+            },
+            {
+                "Tipo": "Mancuernas",
+                "Descripcion": "Mayor estiramiento, trabajo más controlado.",
+                "Puntos_fuertes": "Activación completa.",
+                "Puntos_debiles": "Inestable con cargas altas."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            }
+        ],
+        "Recomendacion_de_orden": "Segundo o tercer ejercicio de pecho."
+    },
+    {
+        "Nombre": "Aperturas planas",
+        "Musculo_principal": "Pectoral",
+        "Musculo_principal_concreto": "Pectoral medio",
+        "Musculos_secundarios": [
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides anterior"
+        ],
+        "Ejecucion": "Abrir los brazos con mancuernas desde el centro hasta estirarlos lateralmente sin bloquear.",
+        "Variantes": [
+            {
+                "Tipo": "Mancuernas",
+                "Descripcion": "Mayor estiramiento del pectoral.",
+                "Puntos_fuertes": "Gran aislamiento muscular.",
+                "Puntos_debiles": "Fácil compensar con hombros."
+            },
+            {
+                "Tipo": "Polea",
+                "Descripcion": "Tensión constante durante todo el movimiento.",
+                "Puntos_fuertes": "Mayor control del movimiento.",
+                "Puntos_debiles": "Carga limitada."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Después de presses en rutina de pecho."
+    },
+    {
+        "Nombre": "Aperturas inclinadas",
+        "Musculo_principal": "Pectoral",
+        "Musculo_principal_concreto": "Pectoral superior",
+        "Musculos_secundarios": [
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides anterior"
+        ],
+        "Ejecucion": "Abrir los brazos en banco inclinado manteniendo los codos ligeramente flexionados.",
+        "Variantes": [
+            {
+                "Tipo": "Mancuernas",
+                "Descripcion": "Excelente para estiramiento y forma del pectoral superior.",
+                "Puntos_fuertes": "Gran estiramiento.",
+                "Puntos_debiles": "Difícil manejar mucho peso."
+            },
+            {
+                "Tipo": "Polea",
+                "Descripcion": "Constante tensión muscular.",
+                "Puntos_fuertes": "Control total.",
+                "Puntos_debiles": "Requiere máquina."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Segundo o tercer ejercicio para pectoral superior."
+    },
+    {
+        "Nombre": "Aperturas declinadas",
+        "Musculo_principal": "Pectoral",
+        "Musculo_principal_concreto": "Pectoral inferior",
+        "Musculos_secundarios": [
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides anterior"
+        ],
+        "Ejecucion": "Apertura de brazos en banco declinado, estirando el pectoral inferior.",
+        "Variantes": [
+            {
+                "Tipo": "Mancuernas",
+                "Descripcion": "Estiramiento intenso en declive.",
+                "Puntos_fuertes": "Trabajo fuerte del pectoral inferior.",
+                "Puntos_debiles": "Difícil estabilizar."
+            },
+            {
+                "Tipo": "Polea",
+                "Descripcion": "Mejor aislamiento con tensión constante.",
+                "Puntos_fuertes": "Muy buen aislamiento.",
+                "Puntos_debiles": "Requiere polea baja o alta dependiendo del ángulo."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Final de rutina de pecho para enfocar parte baja."
+    },
+    {
+        "Nombre": "Extensión de tríceps en polea",
+        "Musculo_principal": "Tríceps",
+        "Musculo_principal_concreto": "Cabeza lateral del tríceps",
+        "Musculos_secundarios": [
+            "Antebrazo",
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Flexores del antebrazo",
+            "Deltoides posterior"
+        ],
+        "Ejecucion": "Extender los brazos desde un ángulo de 90° hasta casi bloqueo sin mover los codos.",
+        "Variantes": [
+            {
+                "Tipo": "Cuerda",
+                "Descripcion": "Permite separar al final para mayor activación.",
+                "Puntos_fuertes": "Mejor contracción al final del movimiento.",
+                "Puntos_debiles": "Menor control con cargas altas."
+            },
+            {
+                "Tipo": "Barra recta",
+                "Descripcion": "Más carga posible, más estabilidad.",
+                "Puntos_fuertes": "Ideal para ganar fuerza.",
+                "Puntos_debiles": "Menor aislamiento del tríceps."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            },
+            {
+                "Tipo": "Polea alta",
+                "Descripcion": "Desde la polea alta, extender completamente los brazos hacia abajo.",
+                "Puntos_fuertes": "Muy buen aislamiento y control.",
+                "Puntos_debiles": "Puede cargar menos que otros ejercicios compuestos.",
+                "Cuando_recomendarla": "Ideal para aislamiento o fases de definición."
+            }
+        ],
+        "Recomendacion_de_orden": "Intermedio o final en rutinas de brazos o empuje."
+    },
+    {
+        "Nombre": "Extensión catana",
+        "Musculo_principal": "Tríceps",
+        "Musculo_principal_concreto": "Cabeza larga del tríceps",
+        "Musculos_secundarios": [
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides posterior"
+        ],
+        "Ejecucion": "Desde polea alta, llevar cuerda detrás de la cabeza extendiendo los codos.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión en máquina para mayor control y aislamiento.",
+                "Puntos_fuertes": "Buena para principiantes.",
+                "Puntos_debiles": "Menor activación de estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Trabajo de un brazo a la vez para enfocar el estímulo.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Ejercicio de aislamiento para finalizar rutina de tríceps."
+    },
+    {
+        "Nombre": "Press francés",
+        "Musculo_principal": "Tríceps",
+        "Musculo_principal_concreto": "Cabeza larga del tríceps",
+        "Musculos_secundarios": [
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides anterior"
+        ],
+        "Ejecucion": "Con barra Z o mancuernas, bajar el peso hacia la frente desde una posición de press.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión en máquina para mayor control y aislamiento.",
+                "Puntos_fuertes": "Buena para principiantes.",
+                "Puntos_debiles": "Menor activación de estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Trabajo de un brazo a la vez para enfocar el estímulo.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Ideal como segundo ejercicio de tríceps."
+    },
+    {
+        "Nombre": "Press cerrado",
+        "Musculo_principal": "Tríceps",
+        "Musculo_principal_concreto": "Cabeza medial del tríceps",
+        "Musculos_secundarios": [
+            "Pectoral",
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides anterior",
+            "Pectoral medio"
+        ],
+        "Ejecucion": "Con agarre estrecho, bajar la barra hacia el pecho manteniendo los codos pegados.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión en máquina para mayor control y aislamiento.",
+                "Puntos_fuertes": "Buena para principiantes.",
+                "Puntos_debiles": "Menor activación de estabilizadores."
+            }
+        ],
+        "Recomendacion_de_orden": "Ejercicio compuesto para iniciar la rutina de tríceps."
+    },
+    {
+        "Nombre": "Fondos",
+        "Musculo_principal": "Tríceps",
+        "Musculo_principal_concreto": "Cabeza larga y lateral del tríceps",
+        "Musculos_secundarios": [
+            "Pectoral",
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides anterior",
+            "Pectoral inferior"
+        ],
+        "Ejecucion": "Bajar el cuerpo entre barras paralelas flexionando codos hasta formar un ángulo de 90°.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión en máquina para mayor control y aislamiento.",
+                "Puntos_fuertes": "Buena para principiantes.",
+                "Puntos_debiles": "Menor activación de estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Trabajo de un brazo a la vez para enfocar el estímulo.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Ejercicio compuesto, ideal como inicio o finisher de rutina."
+    },
+    {
+        "Nombre": "Curl de bíceps con barra",
+        "Musculo_principal": "Bíceps",
+        "Musculo_principal_concreto": "Cabeza corta del bíceps",
+        "Musculos_secundarios": [
+            "Antebrazo"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Braquiorradial"
+        ],
+        "Ejecucion": "Flexionar los codos sin mover los hombros, subiendo la barra hasta el pecho.",
+        "Variantes": [
+            {
+                "Tipo": "Barra Z",
+                "Descripcion": "Reduce tensión en muñeca, más ergonómico.",
+                "Puntos_fuertes": "Mejor para articulaciones.",
+                "Puntos_debiles": "Menor rango de movimiento."
+            },
+            {
+                "Tipo": "Mancuernas alternadas",
+                "Descripcion": "Mayor control unilateral.",
+                "Puntos_fuertes": "Mejora desbalances musculares.",
+                "Puntos_debiles": "Más fatiga por estabilización."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            },
+            {
+                "Tipo": "Polea baja",
+                "Descripcion": "Se puede variar el agarre para distintos estímulos.",
+                "Puntos_fuertes": "Tensión constante, buena conexión mente-músculo.",
+                "Puntos_debiles": "No se puede manejar tanta carga como con barra.",
+                "Cuando_recomendarla": "Ideal como ejercicio finalizador o para congestión."
+            }
+        ],
+        "Recomendacion_de_orden": "Segundo ejercicio en día de brazos o tracción."
+    },
+    {
+        "Nombre": "Curl martillo",
+        "Musculo_principal": "Bíceps",
+        "Musculo_principal_concreto": "Cabeza braquial y braquiorradial",
+        "Musculos_secundarios": [
+            "Antebrazo"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Extensores del antebrazo"
+        ],
+        "Ejecucion": "Con mancuernas, se eleva el peso manteniendo las palmas enfrentadas.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina para control del movimiento.",
+                "Puntos_fuertes": "Permite mantener tensión constante y control de forma.",
+                "Puntos_debiles": "Puede limitar el rango natural del movimiento."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Se realiza con un solo brazo para mejor enfoque muscular.",
+                "Puntos_fuertes": "Corrige desbalances musculares y mejora enfoque.",
+                "Puntos_debiles": "Requiere más control postural."
+            }
+        ],
+        "Recomendacion_de_orden": "Usar como complemento para enfatizar la cabeza braquial y antebrazo."
+    },
+    {
+        "Nombre": "Curl bayesiano",
+        "Musculo_principal": "Bíceps",
+        "Musculo_principal_concreto": "Cabeza larga del bíceps",
+        "Musculos_secundarios": [
+            "Bíceps braquial",
+            "Bíceps corto"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Cabeza corta del bíceps"
+        ],
+        "Ejecucion": "Se realiza con polea baja y el cuerpo ligeramente adelantado, alargando el rango.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina para control del movimiento.",
+                "Puntos_fuertes": "Permite mantener tensión constante y control de forma.",
+                "Puntos_debiles": "Puede limitar el rango natural del movimiento."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Se realiza con un solo brazo para mejor enfoque muscular.",
+                "Puntos_fuertes": "Corrige desbalances musculares y mejora enfoque.",
+                "Puntos_debiles": "Requiere más control postural."
+            }
+        ],
+        "Recomendacion_de_orden": "Excelente como ejercicio de aislamiento final o para estiramiento bajo carga."
+    },
+    {
+        "Nombre": "Curl predicador",
+        "Musculo_principal": "Bíceps",
+        "Musculo_principal_concreto": "Cabeza corta del bíceps",
+        "Musculos_secundarios": [
+            "Bíceps braquial"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Cabeza larga"
+        ],
+        "Ejecucion": "Sentado en banco predicador, se realiza curl con apoyo del brazo en el banco.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina para control del movimiento.",
+                "Puntos_fuertes": "Permite mantener tensión constante y control de forma.",
+                "Puntos_debiles": "Puede limitar el rango natural del movimiento."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Se realiza con un solo brazo para mejor enfoque muscular.",
+                "Puntos_fuertes": "Corrige desbalances musculares y mejora enfoque.",
+                "Puntos_debiles": "Requiere más control postural."
+            }
+        ],
+        "Recomendacion_de_orden": "Muy útil al principio para máximo control o al final como aislamiento."
+    },
+    {
+        "Nombre": "Elevaciones laterales",
+        "Musculo_principal": "Deltoides",
+        "Musculo_principal_concreto": "Deltoides medio",
+        "Musculos_secundarios": [
+            "Antebrazo",
+            "Trapecio"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Flexores del antebrazo",
+            "Trapecio superior"
+        ],
+        "Ejecucion": "Elevar los brazos lateralmente hasta la altura de los hombros sin encoger los trapecios.",
+        "Variantes": [
+            {
+                "Tipo": "Mancuernas",
+                "Descripcion": "Clásica y directa.",
+                "Puntos_fuertes": "Fácil de progresar.",
+                "Puntos_debiles": "Fácil usar impulso incorrecto."
+            },
+            {
+                "Tipo": "Polea baja",
+                "Descripcion": "Tensión constante en todo el recorrido.",
+                "Puntos_fuertes": "Mejor control y aislamiento.",
+                "Puntos_debiles": "Menor carga máxima."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Después de presses de hombros o como aislamiento."
+    },
+    {
+        "Nombre": "Press militar",
+        "Musculo_principal": "Deltoides",
+        "Musculo_principal_concreto": "Deltoides anterior",
+        "Musculos_secundarios": [
+            "Tríceps",
+            "Trapecio superior"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Haz superior del trapecio",
+            "Cabeza larga"
+        ],
+        "Ejecucion": "Desde los hombros, empujar la barra o mancuernas hacia arriba hasta extender los brazos.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión en máquina guiada.",
+                "Puntos_fuertes": "Ideal para novatos o control de forma.",
+                "Puntos_debiles": "Menor activación estabilizadora.",
+                "Cuando_recomendarla": "Cuando se busca estabilidad o estás empezando."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Una mancuerna a la vez.",
+                "Puntos_fuertes": "Corrige desbalances y mejora enfoque.",
+                "Puntos_debiles": "Menor carga total manejable.",
+                "Cuando_recomendarla": "Para enfocar o corregir asimetrías."
+            }
+        ],
+        "Recomendacion_de_orden": "Ejercicio compuesto inicial en rutina de hombro o torso."
+    },
+    {
+        "Nombre": "Elevación frontal",
+        "Musculo_principal": "Deltoides",
+        "Musculo_principal_concreto": "Deltoides anterior",
+        "Musculos_secundarios": [
+            "Trapecio superior"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Haz superior del trapecio"
+        ],
+        "Ejecucion": "Con mancuernas o barra, levantar los brazos al frente hasta los ojos.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Elevación frontal guiada.",
+                "Puntos_fuertes": "Aísla el músculo objetivo.",
+                "Puntos_debiles": "Menor rango natural.",
+                "Cuando_recomendarla": "Cuando se quiere mayor control."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Un brazo a la vez.",
+                "Puntos_fuertes": "Mejor enfoque muscular y corrección.",
+                "Puntos_debiles": "Requiere más tiempo.",
+                "Cuando_recomendarla": "Cuando hay desbalance o se busca control."
+            }
+        ],
+        "Recomendacion_de_orden": "Ideal en la mitad o final de rutina de hombros."
+    },
+    {
+        "Nombre": "Elevación lateral",
+        "Musculo_principal": "Deltoides",
+        "Musculo_principal_concreto": "Deltoides lateral",
+        "Musculos_secundarios": [
+            "Trapecio medio"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Haz medio del trapecio"
+        ],
+        "Ejecucion": "Levantar los brazos hacia los lados manteniendo ligera flexión del codo.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Elevación lateral guiada.",
+                "Puntos_fuertes": "Aísla y controla tensión.",
+                "Puntos_debiles": "Puede no adaptarse a todos los cuerpos.",
+                "Cuando_recomendarla": "Ideal para aislamiento final."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Un brazo a la vez.",
+                "Puntos_fuertes": "Mayor control e intensidad por lado.",
+                "Puntos_debiles": "No permite gran sobrecarga.",
+                "Cuando_recomendarla": "Para corregir desequilibrios o variar el estímulo."
+            }
+        ],
+        "Recomendacion_de_orden": "Ejercicio clásico de aislamiento para mitad o final de rutina."
+    },
+    {
+        "Nombre": "Elevación posterior (pájaros)",
+        "Musculo_principal": "Deltoides",
+        "Musculo_principal_concreto": "Deltoides posterior",
+        "Musculos_secundarios": [
+            "Trapecio medio",
+            "Romboides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Haz medio del trapecio",
+            "Romboides mayor"
+        ],
+        "Ejecucion": "Inclinado hacia adelante, levantar los brazos lateralmente.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Reverse fly en máquina.",
+                "Puntos_fuertes": "Mantiene tensión y forma.",
+                "Puntos_debiles": "Menor implicación estabilizadora.",
+                "Cuando_recomendarla": "Ideal para aislamiento final."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Un lado a la vez con polea o mancuerna.",
+                "Puntos_fuertes": "Permite gran conexión mente-músculo.",
+                "Puntos_debiles": "Menor carga posible.",
+                "Cuando_recomendarla": "Para concentración en activación."
+            }
+        ],
+        "Recomendacion_de_orden": "Útil como activación o aislamiento de deltoide posterior."
+    },
+    {
+        "Nombre": "Dominadas",
+        "Musculo_principal": "Dorsal",
+        "Musculo_principal_concreto": "Dorsal ancho",
+        "Musculos_secundarios": [
+            "Trapecio inferior",
+            "Bíceps",
+            "Romboides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Cabeza larga del bíceps",
+            "Romboides mayor"
+        ],
+        "Ejecucion": "Colgado en barra, traccionar hasta que el pecho se acerque a la barra.",
+        "Variantes": [
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Dominadas asistidas en máquina.",
+                "Puntos_fuertes": "Permite progresar desde principiante.",
+                "Puntos_debiles": "Menor activación estabilizadora.",
+                "Cuando_recomendarla": "Ideal para empezar o al final con alta rep."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Dominadas a un brazo (avanzado).",
+                "Puntos_fuertes": "Máxima exigencia unilateral.",
+                "Puntos_debiles": "Muy difícil técnicamente.",
+                "Cuando_recomendarla": "Para atletas muy avanzados."
+            }
+        ],
+        "Recomendacion_de_orden": "Ejercicio base de tracción, primero en espalda o torso."
+    },
+    {
+        "Nombre": "Jalón al pecho",
+        "Musculo_principal": "Dorsal",
+        "Musculo_principal_concreto": "Dorsal superior",
+        "Musculos_secundarios": [
+            "Bíceps",
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Cabeza larga del bíceps",
+            "Deltoides posterior"
+        ],
+        "Ejecucion": "Jalar la barra hacia la parte superior del pecho sin inclinarse hacia atrás.",
+        "Variantes": [
+            {
+                "Tipo": "Agarre ancho",
+                "Descripcion": "Mayor enfoque en dorsales superiores.",
+                "Puntos_fuertes": "Amplitud de espalda.",
+                "Puntos_debiles": "Menor recorrido final."
+            },
+            {
+                "Tipo": "Agarre estrecho",
+                "Descripcion": "Mayor implicación del bíceps.",
+                "Puntos_fuertes": "Más rango de movimiento.",
+                "Puntos_debiles": "Menor aislamiento dorsal."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            }
+        ],
+        "Recomendacion_de_orden": "Primer ejercicio de tirón o espalda."
+    },
+    {
+        "Nombre": "Sentadilla",
+        "Musculo_principal": "Cuádriceps",
+        "Musculo_principal_concreto": "Vasto externo",
+        "Musculos_secundarios": [
+            "Core",
+            "Glúteo",
+            "Femoral"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Glúteo mayor",
+            "Recto abdominal",
+            "Bíceps femoral"
+        ],
+        "Ejecucion": "Bajar con control hasta que los muslos estén paralelos al suelo y subir sin impulso.",
+        "Variantes": [
+            {
+                "Tipo": "Barra alta",
+                "Descripcion": "Barra sobre los trapecios, torso más erguido.",
+                "Puntos_fuertes": "Mayor activación de cuádriceps.",
+                "Puntos_debiles": "Mayor tensión en rodillas."
+            },
+            {
+                "Tipo": "Barra baja",
+                "Descripcion": "Barra más baja en la espalda, mayor inclinación.",
+                "Puntos_fuertes": "Más peso, activa glúteos.",
+                "Puntos_debiles": "Mayor tensión lumbar."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            }
+        ],
+        "Recomendacion_de_orden": "Primero en entrenamientos de pierna."
+    },
+    {
+        "Nombre": "Hip thrust",
+        "Musculo_principal": "Glúteo",
+        "Musculo_principal_concreto": "Glúteo mayor",
+        "Musculos_secundarios": [
+            "Isquiotibiales",
+            "Cuádriceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Semitendinoso",
+            "Recto femoral"
+        ],
+        "Ejecucion": "Apoyar la parte alta de la espalda en banco y elevar la cadera hasta alinear rodillas con torso.",
+        "Variantes": [
+            {
+                "Tipo": "Barra",
+                "Descripcion": "Mayor carga progresiva.",
+                "Puntos_fuertes": "Fuerza e hipertrofia glútea.",
+                "Puntos_debiles": "Incómodo al colocar la barra."
+            },
+            {
+                "Tipo": "Banda elástica",
+                "Descripcion": "Más cómodo, menos carga.",
+                "Puntos_fuertes": "Activación continua.",
+                "Puntos_debiles": "No ideal para fuerza máxima."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Ejercicio central en día de glúteo o pierna posterior."
+    },
+    {
+        "Nombre": "Curl femoral",
+        "Musculo_principal": "Isquiotibiales",
+        "Musculo_principal_concreto": "Bíceps femoral",
+        "Musculos_secundarios": [
+            "Glúteo",
+            "Gemelo"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Gastrocnemio",
+            "Glúteo mayor"
+        ],
+        "Ejecucion": "Flexionar las piernas desde una posición extendida hasta acercar los talones a los glúteos.",
+        "Variantes": [
+            {
+                "Tipo": "Acostado",
+                "Descripcion": "Más aislamiento.",
+                "Puntos_fuertes": "Aislamiento efectivo.",
+                "Puntos_debiles": "Tensión lumbar si mal ejecutado."
+            },
+            {
+                "Tipo": "Sentado",
+                "Descripcion": "Mayor rango de estiramiento.",
+                "Puntos_fuertes": "Mayor rango de movimiento.",
+                "Puntos_debiles": "Menor tensión pico."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            },
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Realizado con un solo brazo o pierna a la vez.",
+                "Puntos_fuertes": "Ayuda a corregir desbalances musculares y mejora la conexión mente-músculo.",
+                "Puntos_debiles": "Puede requerir mayor control y coordinación."
+            }
+        ],
+        "Recomendacion_de_orden": "Final o medio de rutina de pierna posterior."
+    },
+    {
+        "Nombre": "Elevación de gemelos",
+        "Musculo_principal": "Gemelo",
+        "Musculo_principal_concreto": "Gastrocnemio",
+        "Musculos_secundarios": [
+            "Sóleo"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Sóleo"
+        ],
+        "Ejecucion": "Elevar los talones lo más alto posible desde posición neutra.",
+        "Variantes": [
+            {
+                "Tipo": "De pie",
+                "Descripcion": "Activa más el gastrocnemio.",
+                "Puntos_fuertes": "Buena para volumen general.",
+                "Puntos_debiles": "Difícil mantener equilibrio."
+            },
+            {
+                "Tipo": "Sentado",
+                "Descripcion": "Mayor énfasis en sóleo.",
+                "Puntos_fuertes": "Aislamiento sóleo.",
+                "Puntos_debiles": "Menor activación del gastrocnemio."
+            },
+            {
+                "Tipo": "Máquina",
+                "Descripcion": "Versión asistida por máquina que estabiliza el movimiento.",
+                "Puntos_fuertes": "Segura y guiada. Buena para aislar el músculo.",
+                "Puntos_debiles": "Menor activación de músculos estabilizadores."
+            }
+        ],
+        "Recomendacion_de_orden": "Último ejercicio del día o al final de pierna."
+    },
+    {
+        "Nombre": "Remo con mancuerna a un brazo",
+        "Musculo_principal": "Dorsal",
+        "Musculo_principal_concreto": "Dorsal medio",
+        "Ejecucion": "Apoyando una rodilla sobre banco, traccionar la mancuerna hacia la cadera.",
+        "Variantes": [
+            {
+                "Tipo": "Unilateral",
+                "Descripcion": "Permite mejor rango de movimiento y enfoque por lado.",
+                "Puntos_fuertes": "Corrige asimetrías, fuerte estiramiento y contracción.",
+                "Puntos_debiles": "Más lento en ejecución total.",
+                "Cuando_recomendarla": "Cuando se desea trabajar con más control o si hay desbalances."
+            }
+        ],
+        "Musculos_secundarios": [
+            "Trapecio",
+            "Bíceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Trapecio medio",
+            "Cabeza larga"
+        ],
+        "Recomendacion_de_orden": "Ideal como segundo o tercer ejercicio de espalda."
+    },
+    {
+        "Nombre": "Remo en máquina Hammer",
+        "Musculo_principal": "Dorsal",
+        "Musculo_principal_concreto": "Dorsal medio",
+        "Ejecucion": "Desde máquina, empujar los agarres hacia atrás con espalda recta.",
+        "Variantes": [
+            {
+                "Tipo": "Con agarre neutro",
+                "Descripcion": "Permite mejor activación del dorsal y menos estrés en hombros.",
+                "Puntos_fuertes": "Estable y seguro, ideal para volumen.",
+                "Puntos_debiles": "Menor activación de estabilizadores.",
+                "Cuando_recomendarla": "Cuando se busca estabilidad o carga más pesada sin riesgo."
+            }
+        ],
+        "Musculos_secundarios": [
+            "Trapecio",
+            "Bíceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Trapecio medio",
+            "Cabeza larga"
+        ],
+        "Recomendacion_de_orden": "Úsalo como movimiento pesado tras dominadas o jalones."
+    },
+    {
+        "Nombre": "Sentadilla frontal",
+        "Musculo_principal": "Cuádriceps",
+        "Musculo_principal_concreto": "Vasto intermedio",
+        "Ejecucion": "Con barra sobre hombros frontales, bajar con tronco erguido y subir.",
+        "Variantes": [
+            {
+                "Tipo": "Con barra",
+                "Descripcion": "Mayor énfasis en cuádriceps que la sentadilla trasera.",
+                "Puntos_fuertes": "Menos estrés lumbar, más estímulo en piernas.",
+                "Puntos_debiles": "Requiere buena movilidad y técnica.",
+                "Cuando_recomendarla": "Cuando se prioriza cuádriceps o hay problemas lumbares."
+            }
+        ],
+        "Musculos_secundarios": [
+            "Core",
+            "Glúteo"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Glúteo medio",
+            "Recto abdominal"
+        ],
+        "Recomendacion_de_orden": "Puede alternarse con la sentadilla tradicional para variar estímulo."
+    },
+    {
+        "Nombre": "Zancadas (lunges)",
+        "Musculo_principal": "Glúteo",
+        "Musculo_principal_concreto": "Glúteo mayor",
+        "Ejecucion": "Dar un paso al frente y bajar la rodilla trasera sin tocar el suelo.",
+        "Variantes": [
+            {
+                "Tipo": "Caminando o estacionario",
+                "Descripcion": "Más exigente en equilibrio cuando se camina.",
+                "Puntos_fuertes": "Muy funcionales, trabajan pierna y core.",
+                "Puntos_debiles": "Poco prácticas con peso elevado.",
+                "Cuando_recomendarla": "Cuando se quiere trabajar unilateral o ganar control motor."
+            }
+        ],
+        "Musculos_secundarios": [
+            "Isquiotibiales",
+            "Cuádriceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Vasto lateral",
+            "Semitendinoso"
+        ],
+        "Recomendacion_de_orden": "Úsalo como finalizador o ejercicio unilateral base."
+    },
+    {
+        "Nombre": "Step-up (subida a banco)",
+        "Musculo_principal": "Glúteo",
+        "Musculo_principal_concreto": "Glúteo mayor",
+        "Ejecucion": "Subir a un banco elevado con una pierna y luego la otra.",
+        "Variantes": [
+            {
+                "Tipo": "Con mancuernas",
+                "Descripcion": "Permite carga libre a cada lado.",
+                "Puntos_fuertes": "Muy buen estímulo funcional y unilateral.",
+                "Puntos_debiles": "Difícil progresar en carga alta.",
+                "Cuando_recomendarla": "Cuando se busca glúteo sin sobrecargar columna."
+            }
+        ],
+        "Musculos_secundarios": [
+            "Core",
+            "Cuádriceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Oblicuos",
+            "Vasto interno"
+        ],
+        "Recomendacion_de_orden": "Ideal para glúteos, se puede alternar con hip thrusts."
+    },
+    {
+        "Nombre": "Remo con barra",
+        "Musculo_principal": "Dorsal",
+        "Musculo_principal_concreto": "Dorsal medio",
+        "Musculos_secundarios": [
+            "Trapecio",
+            "Bíceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Trapecio medio",
+            "Cabeza larga del bíceps"
+        ],
+        "Ejecucion": "Desde posición inclinada, traccionar la barra hacia el abdomen manteniendo la espalda recta.",
+        "Variantes": [
+            {
+                "Tipo": "Agarre pronado",
+                "Descripcion": "Mayor enfoque en dorsales y trapecio medio.",
+                "Puntos_fuertes": "Gran activación muscular general.",
+                "Puntos_debiles": "Mayor tensión lumbar si se hace mal.",
+                "Cuando_recomendarla": "Para fuerza y masa en espalda."
+            },
+            {
+                "Tipo": "Agarre supino",
+                "Descripcion": "Mayor implicación de bíceps y dorsales bajos.",
+                "Puntos_fuertes": "Más tracción de brazos.",
+                "Puntos_debiles": "Menor activación de trapecio."
+            }
+        ],
+        "Recomendacion_de_orden": "Segundo o tercer ejercicio en día de espalda o torso."
+    },
+    {
+        "Nombre": "Remo en polea baja",
+        "Musculo_principal": "Dorsal",
+        "Musculo_principal_concreto": "Dorsal medio",
+        "Musculos_secundarios": [
+            "Trapecio",
+            "Bíceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Trapecio medio",
+            "Cabeza larga del bíceps"
+        ],
+        "Ejecucion": "Sentado en máquina con polea, traccionar el agarre hacia el abdomen sin balanceo del torso.",
+        "Variantes": [
+            {
+                "Tipo": "Agarre estrecho",
+                "Descripcion": "Mayor recorrido y contracción.",
+                "Puntos_fuertes": "Excelente para activar dorsales.",
+                "Puntos_debiles": "Puede favorecer demasiado los bíceps si se ejecuta mal."
+            },
+            {
+                "Tipo": "Agarre amplio",
+                "Descripcion": "Mayor enfoque en parte media de la espalda.",
+                "Puntos_fuertes": "Aísla el dorsal más que el bíceps.",
+                "Puntos_debiles": "Menor rango de recorrido."
+            }
+        ],
+        "Recomendacion_de_orden": "Ideal para mitad de rutina de espalda."
+    },
+    {
+        "Nombre": "Pull-over",
+        "Musculo_principal": "Dorsal",
+        "Musculo_principal_concreto": "Dorsal superior",
+        "Musculos_secundarios": [
+            "Pectoral",
+            "Tríceps"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Pectoral mayor",
+            "Cabeza larga del tríceps"
+        ],
+        "Ejecucion": "Desde polea alta, bajar la barra o cuerda en línea recta hacia la cadera manteniendo los brazos rectos.",
+        "Variantes": [
+            {
+                "Tipo": "Con cuerda",
+                "Descripcion": "Permite mayor amplitud de movimiento.",
+                "Puntos_fuertes": "Mejor estiramiento y conexión mente-músculo.",
+                "Puntos_debiles": "Menor carga manejable."
+            },
+            {
+                "Tipo": "Con barra recta",
+                "Descripcion": "Más estabilidad.",
+                "Puntos_fuertes": "Mejor para fases de fuerza.",
+                "Puntos_debiles": "Menor rango natural."
+            }
+        ],
+        "Recomendacion_de_orden": "Final de rutina para estiramiento bajo carga."
+    },
+    {
+        "Nombre": "Remo alto con barra",
+        "Musculo_principal": "Trapecio",
+        "Musculo_principal_concreto": "Trapecio superior",
+        "Musculos_secundarios": [
+            "Deltoides"
+        ],
+        "Musculos_secundarios_concretos": [
+            "Deltoides lateral"
+        ],
+        "Ejecucion": "Desde posición de pie, elevar la barra en línea recta hasta el pecho, codos altos.",
+        "Variantes": [
+            {
+                "Tipo": "Agarre estrecho",
+                "Descripcion": "Más implicación del trapecio y bíceps.",
+                "Puntos_fuertes": "Muy buena congestión del trapecio.",
+                "Puntos_debiles": "Riesgo de pinzamiento si se eleva demasiado."
+            },
+            {
+                "Tipo": "Agarre amplio",
+                "Descripcion": "Mayor enfoque en deltoides.",
+                "Puntos_fuertes": "Más cómodo para hombros.",
+                "Puntos_debiles": "Menor carga."
+            }
+        ],
+        "Recomendacion_de_orden": "Como ejercicio complementario para trapecio y hombro."
     }
-  ]
-}
+]
