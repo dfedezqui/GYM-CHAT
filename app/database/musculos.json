@@ -1,8 +1,8 @@
 [
     {
         "Nombre": "Pectoral",
-        "Localizacion": "Parte frontal del tórax",
-        "Funcion": "Se activa en movimientos de empuje, aducción del brazo, rotación interna del hombro y flexión del brazo hacia adelante.",
+        "Localizacion": "la parte frontal del tórax",
+        "Funcion": "es intervenir en movimientos de empuje, aducción del brazo, rotación interna del hombro y flexión del brazo hacia adelante",
         "Segmentos_musculares": [
             {
                 "Nombre": "Pectoral superior",
@@ -31,9 +31,10 @@
         ]
     },
     {
+        
         "Nombre": "Bíceps",
-        "Localizacion": "Parte frontal del brazo superior",
-        "Funcion": "Se activa al flexionar el codo y supinar el antebrazo",
+        "Localizacion": "la parte frontal del brazo superior",
+        "Funcion": "es la flexión del codo y la supinación del antebrazo",
         "Segmentos_musculares": [
             {
                 "Nombre": "Cabeza larga",
@@ -61,9 +62,9 @@
         ]
     },
     {
-        "Nombre": "Tríceps",
-        "Localizacion": "Parte posterior del brazo superior",
-        "Funcion": "Se activa al extender el codo. Importante en movimientos de empuje.",
+       "Nombre": "Tríceps",
+        "Localizacion": "la parte posterior del brazo superior",
+        "Funcion": "es extender el codo, siendo esencial en movimientos de empuje",
         "Segmentos_musculares": [
             {
                 "Nombre": "Cabeza larga",
@@ -93,8 +94,8 @@
     },
     {
         "Nombre": "Deltoides",
-        "Localizacion": "Parte superior y lateral del hombro",
-        "Funcion": "Se activa en elevaciones, empujes verticales y estabilización del brazo.",
+        "Localizacion": "la parte superior y lateral del hombro",
+        "Funcion": "es permitir elevaciones del brazo, empujes verticales y estabilizarlo",
         "Segmentos_musculares": [
             {
                 "Nombre": "Deltoides anterior",
@@ -124,8 +125,8 @@
     },
     {
         "Nombre": "Dorsal",
-        "Localizacion": "Zona media e inferior de la espalda",
-        "Funcion": "Permite jalar hacia el cuerpo y extender el hombro hacia atrás.",
+        "Localizacion": "la zona media e inferior de la espalda",
+        "Funcion": "es facilitar movimientos de tracción y extensión del hombro hacia atrás",
         "Segmentos_musculares": [
             {
                 "Nombre": "Dorsal superior",
@@ -146,9 +147,9 @@
         ]
     },
     {
-        "Nombre": "Espalda alta",
-        "Localizacion": "Parte superior de la espalda, entre los omóplatos y cuello",
-        "Funcion": "Estabilización escapular y retracción de los omóplatos.",
+        "Nombre": "Trapecio",
+        "Localizacion": "la parte superior de la espalda, entre los omóplatos y el cuello",
+        "Funcion": "es estabilizar la escápula y permitir la retracción de los omóplatos",
         "Segmentos_musculares": [
             {
                 "Nombre": "Trapecio superior",
@@ -178,8 +179,8 @@
     },
     {
         "Nombre": "Antebrazo",
-        "Localizacion": "Zona entre el codo y la muñeca",
-        "Funcion": "Flexión y extensión de la muñeca, pronación y supinación del antebrazo.",
+        "Localizacion": "la zona entre el codo y la muñeca",
+        "Funcion": "es permitir la flexión y extensión de la muñeca, así como la pronación y supinación del antebrazo",
         "Segmentos_musculares": [
             {
                 "Nombre": "Flexores del antebrazo",
@@ -200,9 +201,9 @@
         ]
     },
     {
-        "Nombre": "Cuádriceps",
-        "Localizacion": "Parte frontal del muslo",
-        "Funcion": "Extensión de la rodilla y estabilización de la cadera al caminar o correr.",
+         "Nombre": "Cuádriceps",
+        "Localizacion": "la parte frontal del muslo",
+        "Funcion": "es extender la rodilla y estabilizar la cadera durante la marcha o carrera",
         "Segmentos_musculares": [
             {
                 "Nombre": "Vasto externo",
@@ -239,9 +240,9 @@
         ]
     },
     {
-        "Nombre": "Isquiotibiales (Femoral)",
-        "Localizacion": "Parte posterior del muslo",
-        "Funcion": "Flexión de rodilla y extensión de cadera.",
+        "Nombre": "Isquiotibial",
+        "Localizacion": "la parte posterior del muslo",
+        "Funcion": "es permitir la flexión de rodilla y la extensión de cadera",
         "Segmentos_musculares": [
             {
                 "Nombre": "Bíceps femoral",
@@ -270,9 +271,9 @@
         ]
     },
     {
-        "Nombre": "Glúteo",
-        "Localizacion": "Región posterior de la pelvis",
-        "Funcion": "Extensión, abducción y rotación externa de la cadera.",
+          "Nombre": "Glúteo",
+        "Localizacion": "la región posterior de la pelvis",
+        "Funcion": "es realizar la extensión, abducción y rotación externa de la cadera",
         "Segmentos_musculares": [
             {
                 "Nombre": "Glúteo mayor",
@@ -301,9 +302,9 @@
         ]
     },
     {
-        "Nombre": "Gemelo",
-        "Localizacion": "Parte posterior e inferior de la pierna",
-        "Funcion": "Flexión plantar del tobillo (empujar con los pies).",
+       "Nombre": "Gemelo",
+        "Localizacion": "la parte posterior e inferior de la pierna",
+        "Funcion": "es permitir la flexión plantar del tobillo, como al empujar con los pies",
         "Segmentos_musculares": [
             {
                 "Nombre": "Gastrocnemio",
@@ -319,6 +320,45 @@
                 "Ejercicios": [
                     "Elevación de talones sentado",
                     "Prensa de piernas con punta de pies"
+                ]
+            }
+        ]
+    },
+    {
+        "Nombre": "Abdominal",
+        "Localizacion": "la parte frontal y lateral del torso, entre el pecho y la pelvis",
+        "Funcion": "es estabilizar el tronco, facilitar la flexión del torso, la rotación del tronco y ayudar en la respiración y postura",
+        "Segmentos_musculares": [
+            {
+                "Nombre": "Recto abdominal",
+                "Localizacion": "la parte frontal del abdomen, desde el esternón hasta el pubis",
+                "Ejercicios": [
+                    "Crunches",
+                    "Elevaciones de piernas"
+                ]
+            },
+            {
+                "Nombre": "Oblicuos externos",
+                "Localizacion": "los lados del abdomen, superficialmente",
+                "Ejercicios": [
+                    "Giros rusos",
+                    "Crunch oblicuo"
+                ]
+            },
+            {
+                "Nombre": "Oblicuos internos",
+                "Localizacion": "debajo de los oblicuos externos, en los lados del abdomen",
+                "Ejercicios": [
+                    "Plancha lateral",
+                    "Encogimientos con torsión"
+                ]
+            },
+            {
+                "Nombre": "Transverso abdominal",
+                "Localizacion": "la capa más profunda del abdomen, rodeando el tronco",
+                "Ejercicios": [
+                    "Vacío abdominal",
+                    "Planchas"
                 ]
             }
         ]
