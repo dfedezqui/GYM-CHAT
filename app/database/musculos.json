@@ -3,6 +3,9 @@
         "Nombre": "Pectoral",
         "Localizacion": "la parte frontal del tórax",
         "Funcion": "es intervenir en movimientos de empuje, aducción del brazo, rotación interna del hombro y flexión del brazo hacia adelante",
+        "Tren": "superior",
+        "Tamaño": "grande",
+        "Sinergia": "tríceps, deltoides anterior",
         "Segmentos_musculares": [
             {
                 "Nombre": "Pectoral superior",
@@ -31,10 +34,12 @@
         ]
     },
     {
-        
         "Nombre": "Bíceps",
         "Localizacion": "la parte frontal del brazo superior",
         "Funcion": "es la flexión del codo y la supinación del antebrazo",
+        "Tren": "superior",
+        "Tamaño": "mediano",
+        "Sinergia": "braquial, braquiorradial",
         "Segmentos_musculares": [
             {
                 "Nombre": "Cabeza larga",
@@ -62,9 +67,12 @@
         ]
     },
     {
-       "Nombre": "Tríceps",
+        "Nombre": "Tríceps",
         "Localizacion": "la parte posterior del brazo superior",
         "Funcion": "es extender el codo, siendo esencial en movimientos de empuje",
+        "Tren": "superior",
+        "Tamaño": "mediano",
+        "Sinergia": "pectorales, deltoides anterior",
         "Segmentos_musculares": [
             {
                 "Nombre": "Cabeza larga",
@@ -96,6 +104,9 @@
         "Nombre": "Deltoides",
         "Localizacion": "la parte superior y lateral del hombro",
         "Funcion": "es permitir elevaciones del brazo, empujes verticales y estabilizarlo",
+        "Tren": "superior",
+        "Tamaño": "mediano",
+        "Sinergia": "pectorales, trapecios",
         "Segmentos_musculares": [
             {
                 "Nombre": "Deltoides anterior",
@@ -127,6 +138,9 @@
         "Nombre": "Dorsal",
         "Localizacion": "la zona media e inferior de la espalda",
         "Funcion": "es facilitar movimientos de tracción y extensión del hombro hacia atrás",
+        "Tren": "superior",
+        "Tamaño": "grande",
+        "Sinergia": "bíceps, trapecio medio",
         "Segmentos_musculares": [
             {
                 "Nombre": "Dorsal superior",
@@ -150,6 +164,9 @@
         "Nombre": "Trapecio",
         "Localizacion": "la parte superior de la espalda, entre los omóplatos y el cuello",
         "Funcion": "es estabilizar la escápula y permitir la retracción de los omóplatos",
+        "Tren": "superior",
+        "Tamaño": "mediano",
+        "Sinergia": "deltoides posterior, dorsal",
         "Segmentos_musculares": [
             {
                 "Nombre": "Trapecio superior",
@@ -181,6 +198,9 @@
         "Nombre": "Antebrazo",
         "Localizacion": "la zona entre el codo y la muñeca",
         "Funcion": "es permitir la flexión y extensión de la muñeca, así como la pronación y supinación del antebrazo",
+        "Tren": "superior",
+        "Tamaño": "pequeño",
+        "Sinergia": "bíceps, tríceps",
         "Segmentos_musculares": [
             {
                 "Nombre": "Flexores del antebrazo",
@@ -201,9 +221,12 @@
         ]
     },
     {
-         "Nombre": "Cuádriceps",
+        "Nombre": "Cuádriceps",
         "Localizacion": "la parte frontal del muslo",
         "Funcion": "es extender la rodilla y estabilizar la cadera durante la marcha o carrera",
+        "Tren": "inferior",
+        "Tamaño": "grande",
+        "Sinergia": "glúteo, isquiotibial",
         "Segmentos_musculares": [
             {
                 "Nombre": "Vasto externo",
@@ -243,6 +266,9 @@
         "Nombre": "Isquiotibial",
         "Localizacion": "la parte posterior del muslo",
         "Funcion": "es permitir la flexión de rodilla y la extensión de cadera",
+        "Tren": "inferior",
+        "Tamaño": "grande",
+        "Sinergia": "glúteo, cuádriceps",
         "Segmentos_musculares": [
             {
                 "Nombre": "Bíceps femoral",
@@ -271,9 +297,12 @@
         ]
     },
     {
-          "Nombre": "Glúteo",
+        "Nombre": "Glúteo",
         "Localizacion": "la región posterior de la pelvis",
         "Funcion": "es realizar la extensión, abducción y rotación externa de la cadera",
+        "Tren": "inferior",
+        "Tamaño": "grande",
+        "Sinergia": "isquiotibial, cuádriceps",
         "Segmentos_musculares": [
             {
                 "Nombre": "Glúteo mayor",
@@ -302,9 +331,12 @@
         ]
     },
     {
-       "Nombre": "Gemelo",
+        "Nombre": "Gemelo",
         "Localizacion": "la parte posterior e inferior de la pierna",
         "Funcion": "es permitir la flexión plantar del tobillo, como al empujar con los pies",
+        "Tren": "inferior",
+        "Tamaño": "mediano",
+        "Sinergia": "sóleo, tibial anterior",
         "Segmentos_musculares": [
             {
                 "Nombre": "Gastrocnemio",
@@ -328,6 +360,9 @@
         "Nombre": "Abdominal",
         "Localizacion": "la parte frontal y lateral del torso, entre el pecho y la pelvis",
         "Funcion": "es estabilizar el tronco, facilitar la flexión del torso, la rotación del tronco y ayudar en la respiración y postura",
+        "Tren": "superior",
+        "Tamaño": "mediano",
+        "Sinergia": "oblicuos, transverso abdominal",
         "Segmentos_musculares": [
             {
                 "Nombre": "Recto abdominal",
