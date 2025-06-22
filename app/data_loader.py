@@ -414,15 +414,3 @@ def sugerir_ejercicios(musculo, objetivo="hipertrofia"):
 
     return respuesta
 
-
-
-def main():
-    # Ejemplo de uso
-    print(sugerir_ejercicios( "Pectoral", "hipertrofia"))
-
-    
-if __name__ == "__main__":
-    main()
-
-
-
