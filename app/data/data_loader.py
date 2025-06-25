@@ -3,10 +3,10 @@ import json
 import os
 
 
-base_path = os.path.join(os.path.dirname(__file__), "database")
-with open(os.path.join(base_path, "ejercicios.json"), "r", encoding="utf-8") as f:
+base_path = os.path.join(os.path.dirname(__file__), "resources")
+with open(os.path.join(base_path, "exercises.json"), "r", encoding="utf-8") as f:
     ejercicios_data = json.load(f)
-with open(os.path.join(base_path, "musculos.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(base_path, "muscles.json"), "r", encoding="utf-8") as f:
     musculos_data = json.load(f)
     
 
@@ -32,7 +32,7 @@ def despedir_usuario():
     ]
     return random.choice(despedidas)
 
-def responder_duda_general(texto_usuario):
+def no_entender():
         return (
             "Puedo ayudarte con los músculos y ejercicios de forma natural. 💪\n"
             "Por ejemplo, puedes pedirme que:\n"
