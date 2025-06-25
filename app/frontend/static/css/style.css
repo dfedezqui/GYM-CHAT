@@ -1,0 +1,104 @@
+/* Fondo negro y texto claro */
+body {
+    margin: 0;
+    background-color: #121212;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor centrado del chat */
+.chat-container {
+    background-color: #1e1e1e;
+    width: 800px;
+    max-width: 90vw;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
+}
+
+.chat-header {
+    background-color: #0a84ff;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    text-align: center;
+    user-select: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Ajustar chat-window para que no tape el header */
+.chat-window {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos de mensajes */
+.message {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #0a84ff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.message.bot {
+    background-color: #2a2a2a;
+    color: #ddd;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+/* Formulario inferior */
+.chat-form {
+    display: flex;
+    padding: 10px;
+    background-color: #121212;
+    border-top: 1px solid #333;
+}
+
+.chat-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #2a2a2a;
+    color: #eee;
+}
+
+.chat-form button {
+    margin-left: 10px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0a84ff;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.chat-form button:hover {
+    background-color: #006fd6;
+}

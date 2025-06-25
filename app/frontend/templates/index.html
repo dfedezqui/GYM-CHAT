@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GYMCHAT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">GYM Chat</header>
+        <div id="chat" class="chat-window"></div>
+        <form id="chat-form" class="chat-form">
+            <input
+                type="text"
+                id="input-message"
+                placeholder="Escribe tu mensaje..."
+                autocomplete="off"
+                required
+            />
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Cliente Socket.IO -->
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+
+    <!-- Tu script para manejar chat -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
