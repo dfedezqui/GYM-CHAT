@@ -4,7 +4,6 @@ import spacy
 from spacy.matcher import PhraseMatcher
 from difflib import get_close_matches
 import unicodedata
-import re
 
 def normalizar(texto):
     return ''.join(
@@ -157,18 +156,3 @@ def clasificar(texto):
         return "explicar ejercicio", [ejercicios[0]]
 
     return "no entender", []
-
-def main():
-    print("Escribe un mensaje (o 'salir' para terminar):")
-    while True:
-        entrada = input("> ").strip()
-        if entrada.lower() in ["salir", "exit", "quit"]:
-            print("¡Hasta luego!")
-            break
-        funcion, parametros = clasificar(entrada)
-        
-        print(f"Función: {funcion}")
-        print(f"Parámetros: {parametros}")
-
-if __name__ == "__main__":
-    main()
