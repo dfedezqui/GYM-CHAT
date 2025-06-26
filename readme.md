@@ -45,7 +45,7 @@ Contains the core logic for processing user input and returning meaningful respo
 ---
 
 ## 📂 Project Structure
-
+```bash
 GYM-CHAT/
 ├── .gitignore
 ├── LICENSE
@@ -71,7 +71,7 @@ GYM-CHAT/
             ├── css/
             ├── js/
             └── img/
-
+```
 ---
 
 ## ▶️ How to Run the Project
