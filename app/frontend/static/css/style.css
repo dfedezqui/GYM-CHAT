@@ -1,104 +1,141 @@
-/* Fondo negro y texto claro */
+/* Estilo global futurista */
 body {
     margin: 0;
-    background-color: #121212;
-    color: #eee;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
-/* Contenedor centrado del chat */
+/* Chat container con borde neon y glassmorphism */
 .chat-container {
-    background-color: #1e1e1e;
-    width: 800px;
-    max-width: 90vw;
-    height: 600px;
-    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    background: rgba(20, 20, 20, 0.7);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    border-radius: 16px;
+    width: 850px;
+    max-width: 95vw;
+    height: 650px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
 }
 
+/* Cabecera con efecto de luz */
 .chat-header {
-    background-color: #0a84ff;
-    color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding: 15px 20px;
+    background: linear-gradient(90deg, #00f5ff, #008cff);
+    color: #000;
+    font-weight: 800;
+    font-size: 1.8rem;
+    padding: 18px 25px;
     text-align: center;
+    letter-spacing: 1px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: inset 0 -2px 10px rgba(0,0,0,0.3);
     user-select: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
-/* Ajustar chat-window para que no tape el header */
+/* Área del chat */
 .chat-window {
     flex-grow: 1;
-    padding: 15px;
+    padding: 20px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
+    scrollbar-width: thin;
+    scrollbar-color: #0af #222;
 }
 
-/* Estilos de mensajes */
+/* Estilo de los mensajes */
 .message {
-    max-width: 75%;
-    padding: 10px 15px;
-    border-radius: 15px;
-    line-height: 1.4;
+    max-width: 70%;
+    padding: 12px 18px;
+    border-radius: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
     word-wrap: break-word;
+    box-shadow: 0 0 12px rgba(0,255,255,0.1);
+    transition: all 0.3s ease;
 }
 
 .message.user {
-    background-color: #0a84ff;
+    background: linear-gradient(145deg, #005eff, #00bbff);
     color: white;
     align-self: flex-end;
     border-bottom-right-radius: 0;
 }
 
 .message.bot {
-    background-color: #2a2a2a;
-    color: #ddd;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    color: #aeefff;
     align-self: flex-start;
     border-bottom-left-radius: 0;
 }
 
-/* Formulario inferior */
-.chat-form {
-    display: flex;
-    padding: 10px;
-    background-color: #121212;
-    border-top: 1px solid #333;
+.message.typing {
+    font-style: italic;
+    opacity: 0.6;
 }
 
+/* Estilo del formulario */
+.chat-form {
+    display: flex;
+    padding: 12px 16px;
+    background-color: #101010;
+    border-top: 1px solid #333;
+    gap: 12px;
+}
+
+/* Input moderno */
 .chat-form input[type="text"] {
     flex-grow: 1;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 12px 20px;
+    border-radius: 30px;
     border: none;
     outline: none;
     font-size: 1rem;
-    background-color: #2a2a2a;
-    color: #eee;
+    background: #1c1c1c;
+    color: #0ff;
+    box-shadow: inset 0 0 8px #0ff2;
+    transition: 0.3s ease;
 }
 
+.chat-form input[type="text"]::placeholder {
+    color: #666;
+}
+
+/* Botón con brillo */
 .chat-form button {
-    margin-left: 10px;
-    padding: 0 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 20px;
-    background-color: #0a84ff;
-    color: white;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #00f5ff, #008cff);
+    color: black;
     cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00f5ffaa;
+    transition: 0.3s ease;
 }
 
 .chat-form button:hover {
-    background-color: #006fd6;
+    background: linear-gradient(90deg, #00bbff, #005eff);
+    box-shadow: 0 0 15px #00f5ff;
+}
+
+/* Estilo para "escribiendo..." */
+.message.typing {
+    font-style: italic;
+    color: #0ff;
+    opacity: 0.8;
 }

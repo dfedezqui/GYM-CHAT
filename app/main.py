@@ -1,6 +1,8 @@
 import os
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send, emit
+from backend.core.analyzer import clasificar
+from backend.data.loader import devolver_mensaje
 
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,14 +18,13 @@ def index():
     return render_template('index.html')
 
 @socketIO.on('message')
-def handle_message(data):
+def handle_message(msg):
     
-    mesnaje = "Pronto podre ayudarte con temas de gym"
+    funcion, argumentos = clasificar(msg)
+
+    respuesta = devolver_mensaje(funcion, argumentos)
     
-
-    send(mesnaje)
-
-
+    send(respuesta)
 
 if __name__ == '__main__':
     app.run(debug=True)

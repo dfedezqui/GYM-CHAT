@@ -29,7 +29,7 @@ SINONIMOS = {
     "deltoides": ["hombro"],
     "pectoral": ["pecho", "tetas"],
     "bíceps": ["bice", "brazo frontal"],
-    "tríceps": ["trice", "brazo posterior"],
+    "tríceps": ["trice", "brazo posterior", "triceps"],
     "cuádriceps": ["cuadriceps", "pierna frontal"],
     "femorales": ["isquios", "pierna trasera"],
     "glúteos": ["gluteo", "trasero", "nalgas"],

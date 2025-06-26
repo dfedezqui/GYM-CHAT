@@ -3,10 +3,11 @@ import json
 import os
 
 
-base_path = os.path.join(os.path.dirname(__file__), "resources")
-with open(os.path.join(base_path, "exercises.json"), "r", encoding="utf-8") as f:
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+JSON_PATH = os.path.join(BASE_DIR, "resources")
+with open(os.path.join(JSON_PATH, "exercises.json"), "r", encoding="utf-8") as f:
     ejercicios_data = json.load(f)
-with open(os.path.join(base_path, "muscles.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(JSON_PATH, "muscles.json"), "r", encoding="utf-8") as f:
     musculos_data = json.load(f)
     
 
@@ -414,3 +415,38 @@ def sugerir_ejercicios(musculo, objetivo="hipertrofia"):
 
     return respuesta
 
+
+def devolver_mensaje(funcion, argumentos):
+    """
+    Devuelve un mensaje según la función y sus argumentos.
+
+    Parámetros:
+    funcion (str): Nombre de la función a ejecutar.
+    argumentos (list): Lista de argumentos para la función.
+
+    Retorna:
+    str: Mensaje generado por la función.
+    """
+    
+    if funcion == "saludar":
+        return saludar_usuario()
+    elif funcion == "despedir":
+        return despedir_usuario()
+    elif funcion == "no entender":
+        return no_entender()
+    elif funcion == "explicar musculo":
+        return explicar_musculo(*argumentos)
+    elif funcion == "explicar segmentoMusculo":
+        return explicar_porcion_muscular(*argumentos)
+    elif funcion == "comparar musculos":
+        return comparar_musculos(*argumentos)
+    elif funcion == "explicar ejercicio":
+        return explicar_ejercicio(*argumentos)
+    elif funcion == "explicar variante":
+        return explicar_variante_ejercicio(*argumentos)
+    elif funcion == "comparar ejercicios":
+        return comparar_ejercicios(*argumentos)
+    elif funcion == "recomendar ejercicio":
+        return sugerir_ejercicios(*argumentos)
+    
+    return f"Función '{funcion}' no reconocida."
