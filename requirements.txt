@@ -1,9 +1,4 @@
-fastapi
-uvicorn
-scikit-learn
-pydantic
-transformers
-pandas
-python-dotenv
-nltk
-spacy
+Flask>=2.0.0
+flask-socketio>=5.0.0
+eventlet>=0.33.0
+spacy>=3.0.0

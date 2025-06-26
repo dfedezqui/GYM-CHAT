@@ -1,0 +1,362 @@
+{
+  "musculos": [
+    {
+      "nombre": "pectoral",
+      "segmentos": [
+        "pectoral superior",
+        "pectoral medio",
+        "pectoral inferior"
+      ]
+    },
+    {
+      "nombre": "bíceps",
+      "segmentos": [
+        "cabeza larga",
+        "cabeza corta",
+        "cabeza braquial"
+      ]
+    },
+    {
+      "nombre": "tríceps",
+      "segmentos": [
+        "cabeza larga",
+        "cabeza lateral",
+        "cabeza medial"
+      ]
+    },
+    {
+      "nombre": "deltoides",
+      "segmentos": [
+        "deltoides anterior",
+        "deltoides lateral",
+        "deltoides posterior"
+      ]
+    },
+    {
+      "nombre": "dorsal",
+      "segmentos": [
+        "dorsal superior",
+        "dorsal inferior"
+      ]
+    },
+    {
+      "nombre": "trapecio",
+      "segmentos": [
+        "trapecio superior",
+        "trapecio medio",
+        "romboides"
+      ]
+    },
+    {
+      "nombre": "antebrazo",
+      "segmentos": [
+        "flexores del antebrazo",
+        "extensores del antebrazo"
+      ]
+    },
+    {
+      "nombre": "cuádriceps",
+      "segmentos": [
+        "vasto externo",
+        "vasto interno",
+        "recto femoral",
+        "vasto intermedio"
+      ]
+    },
+    {
+      "nombre": "isquiotibial",
+      "segmentos": [
+        "bíceps femoral",
+        "semitendinoso",
+        "semimembranoso"
+      ]
+    },
+    {
+      "nombre": "glúteo",
+      "segmentos": [
+        "glúteo mayor",
+        "glúteo medio",
+        "glúteo menor"
+      ]
+    },
+    {
+      "nombre": "gemelo",
+      "segmentos": [
+        "gastrocnemio",
+        "sóleo"
+      ]
+    },
+    {
+      "nombre": "abdominal",
+      "segmentos": [
+        "recto abdominal",
+        "oblicuos externos",
+        "oblicuos internos",
+        "transverso abdominal"
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "nombre": "press plano",
+      "variantes": [
+        "barra",
+        "mancuernas",
+        "máquina"
+      ]
+    },
+    {
+      "nombre": "press inclinado",
+      "variantes": [
+        "barra",
+        "mancuernas",
+        "máquina"
+      ]
+    },
+    {
+      "nombre": "press declinado",
+      "variantes": [
+        "barra",
+        "mancuernas",
+        "máquina"
+      ]
+    },
+    {
+      "nombre": "aperturas planas",
+      "variantes": [
+        "mancuernas",
+        "polea",
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "aperturas inclinadas",
+      "variantes": [
+        "mancuernas",
+        "polea",
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "aperturas declinadas",
+      "variantes": [
+        "mancuernas",
+        "polea",
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "extensión de tríceps",
+      "variantes": [
+        "polea alta",
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "extensión catana",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "press francés",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "press cerrado",
+      "variantes": [
+        "máquina"
+      ]
+    },
+    {
+      "nombre": "fondos",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "curl de bíceps con barra",
+      "variantes": [
+        "barra z",
+        "mancuernas alternadas",
+        "máquina",
+        "unilateral",
+        "polea baja"
+      ]
+    },
+    {
+      "nombre": "curl martillo",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "curl bayesiano",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "curl predicador",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "elevaciones laterales",
+      "variantes": [
+        "mancuernas",
+        "polea baja",
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "press militar",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "elevación frontal",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "elevación lateral",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "elevación posterior (pájaros)",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "dominadas",
+      "variantes": [
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "jalón al pecho",
+      "variantes": [
+        "agarre ancho",
+        "agarre estrecho",
+        "máquina"
+      ]
+    },
+    {
+      "nombre": "sentadilla",
+      "variantes": [
+        "barra alta",
+        "barra baja",
+        "máquina"
+      ]
+    },
+    {
+      "nombre": "hip thrust",
+      "variantes": [
+        "barra",
+        "banda elástica",
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "curl femoral",
+      "variantes": [
+        "acostado",
+        "sentado",
+        "máquina",
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "elevación de gemelos",
+      "variantes": [
+        "de pie",
+        "sentado",
+        "máquina"
+      ]
+    },
+    {
+      "nombre": "remo con mancuerna a un brazo",
+      "variantes": [
+        "unilateral"
+      ]
+    },
+    {
+      "nombre": "remo en máquina hammer",
+      "variantes": [
+        "con agarre neutro"
+      ]
+    },
+    {
+      "nombre": "sentadilla frontal",
+      "variantes": [
+        "con barra"
+      ]
+    },
+    {
+      "nombre": "zancadas (lunges)",
+      "variantes": [
+        "caminando o estacionario"
+      ]
+    },
+    {
+      "nombre": "step-up (subida a banco)",
+      "variantes": [
+        "con mancuernas"
+      ]
+    },
+    {
+      "nombre": "remo con barra",
+      "variantes": [
+        "agarre pronado",
+        "agarre supino"
+      ]
+    },
+    {
+      "nombre": "remo en polea baja",
+      "variantes": [
+        "agarre estrecho",
+        "agarre amplio"
+      ]
+    },
+    {
+      "nombre": "pull-over",
+      "variantes": [
+        "con cuerda",
+        "con barra recta"
+      ]
+    },
+    {
+      "nombre": "remo alto con barra",
+      "variantes": [
+        "agarre estrecho",
+        "agarre amplio"
+      ]
+    }
+  ]
+}
