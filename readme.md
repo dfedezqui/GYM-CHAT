@@ -48,28 +48,30 @@ Contains the core logic for processing user input and returning meaningful respo
 
 GYM-CHAT/
 ├── .gitignore
+├── LICENSE
 ├── readme.md
 ├── requirements.txt
 └── app/
-├── main.py
-├── backend/
-│ ├── core/
-│ │ ├── init.py
-│ │ └── analyzer.py
-│ ├── data/
-│ │ ├── init.py
-│ │ └── loader.py
-│ └── resources/
-│ ├── entities_spacy.json
-│ ├── exercises.json
-│ └── muscles.json
-└── frontend/
-├── templates/
-│ └── index.html
-└── static/
-├── css/
-├── js/
-└── img/
+    ├── main.py
+    ├── backend/
+    │   ├── core/
+    │   │   ├── __init__.py
+    │   │   └── analyzer.py
+    │   ├── data/
+    │   │   ├── __init__.py
+    │   │   └── loader.py
+    │   └── resources/
+    │       ├── entities_spacy.json
+    │       ├── exercises.json
+    │       └── muscles.json
+    └── frontend/
+        ├── templates/
+        │   └── index.html
+        └── static/
+            ├── css/
+            ├── js/
+            └── img/
+
 ---
 
 ## ▶️ How to Run the Project
