@@ -78,6 +78,11 @@ GYM-CHAT/
 
 ## ▶️ How to Run the Project
 
+### Live Demo
+
+You can check out the app live here:  
+🔗 [https://gym-chat.onrender.com/](https://gym-chat.onrender.com/)
+
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/dfedezqui/GYM-CHAT
