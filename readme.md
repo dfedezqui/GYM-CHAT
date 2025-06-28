@@ -47,26 +47,24 @@ Contains the core logic for processing user input and returning meaningful respo
 ## 📂 Project Structure
 ```bash
 GYM-CHAT/
-├── backend/
+├── GYM-CHAT/
 │   ├── app.py
-│   ├── core/
 │   │   ├── __init__.py
 │   │   └── analyzer.py
 │   ├── data/
 │   │   ├── __init__.py
 │   │   └── loader.py
 │   └── resources/
-│       ├── entities_spacy.json
-│       ├── exercises.json
-│       └── muscles.json
-├── frontend/
-│   ├── templates/
-│   │   └── index.html
-│   └── static/
-│       ├── css/
-│       │   └── style.css
-│       └── js/
-│           └── script.js
+│   │   ├── entities_spacy.json
+│   │   ├── exercises.json
+│   │   └── muscles.json
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   └── js/
+│   │       └── script.js
+│   └── templates/
+│       └── index.html
 ├── .gitignore
 ├── LICENSE
 ├── readme.md
@@ -119,7 +117,7 @@ except OSError:
 
 ### 5. Run the application
 ```bash
-python backend/app.py
+python GYM-CHAT/app.py
 ```
 The server will be available by default at:
 👉 http://localhost:5000
