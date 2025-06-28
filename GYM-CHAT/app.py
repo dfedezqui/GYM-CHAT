@@ -1,16 +1,20 @@
 import eventlet
-eventlet.monkey_patch()
-
 import os
+import sys
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send, emit
 from core.analyzer import clasificar
 from data.loader import devolver_mensaje
+arg = False
+if len(sys.argv) > 1:
+    arg = True
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.dirname(base_dir)  
-template_dir = os.path.join(project_root, 'frontend', 'templates')
-static_dir = os.path.join(project_root, 'frontend', 'static')
+if arg:
+    eventlet.monkey_patch()
+
+base_dir = os.path.dirname(os.path.abspath(__file__)) 
+template_dir = os.path.join(base_dir, 'templates')
+static_dir = os.path.join(base_dir, 'static')
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 socketIO = SocketIO(app)
@@ -26,5 +30,10 @@ def handle_message(msg):
     send(respuesta)
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    socketIO.run(app, host='0.0.0.0', port=port)
+    if arg:
+        port = int(os.environ.get('PORT', 5000))
+        socketIO.run(app, host='0.0.0.0', port=port)
+    else:
+        socketIO.run(app, debug=True)
+
+
