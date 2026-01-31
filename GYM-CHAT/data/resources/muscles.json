@@ -1,0 +1,128 @@
+[
+  {
+    "id": "pectoral",
+    "nombre": "Pectoral",
+    "localizacion": "Parte frontal del tórax",
+    "funcion": "Empuje, aducción y rotación interna del brazo",
+    "tren": "Superior",
+    "grupo_muscular": "Grande",
+    "subdivisiones": ["Superior (Clavicular)", "Medio (Esternal)", "Inferior (Costal)"]
+  },
+  {
+    "id": "biceps",
+    "nombre": "Bíceps",
+    "localizacion": "Parte frontal del brazo superior",
+    "funcion": "Flexión del codo y supinación",
+    "tren": "Superior",
+    "grupo_muscular": "Pequeño",
+    "subdivisiones": ["Cabeza Larga (Externa)", "Cabeza Corta (Interna)", "Braquial Anterior"]
+  },
+  {
+    "id": "triceps",
+    "nombre": "Tríceps",
+    "localizacion": "Parte posterior del brazo superior",
+    "funcion": "Extensión del codo",
+    "tren": "Superior",
+    "grupo_muscular": "Pequeño",
+    "subdivisiones": ["Cabeza Larga", "Cabeza Lateral (Externa)", "Cabeza Medial"]
+  },
+  {
+    "id": "deltoides",
+    "nombre": "Deltoides",
+    "localizacion": "Hombros",
+    "funcion": "Elevación y estabilización del brazo",
+    "tren": "Superior",
+    "grupo_muscular": "Mediano",
+    "subdivisiones": ["Anterior (Frontal)", "Lateral (Medio)", "Posterior (Trasero)"]
+  },
+  {
+    "id": "dorsal",
+    "nombre": "Dorsal Ancho",
+    "localizacion": "Zona media e inferior de la espalda",
+    "funcion": "Tracción y extensión del hombro",
+    "tren": "Superior",
+    "grupo_muscular": "Grande",
+    "subdivisiones": ["Porción Torácica", "Porción Lumbar", "Porción Iliaca"]
+  },
+  {
+    "id": "trapecio",
+    "nombre": "Trapecio",
+    "localizacion": "Parte superior de la espalda y cuello",
+    "funcion": "Estabilización de escápulas y cuello",
+    "tren": "Superior",
+    "grupo_muscular": "Mediano",
+    "subdivisiones": ["Superior (Descendente)", "Medio (Transverso)", "Inferior (Ascendente)"]
+  },
+  {
+    "id": "antebrazo",
+    "nombre": "Antebrazo",
+    "localizacion": "Entre codo y muñeca",
+    "funcion": "Agarre y movimiento de muñeca",
+    "tren": "Superior",
+    "grupo_muscular": "Pequeño",
+    "subdivisiones": ["Flexores de la muñeca", "Extensores de la muñeca", "Braquiorradial"]
+  },
+  {
+    "id": "cuadriceps",
+    "nombre": "Cuádriceps",
+    "localizacion": "Parte frontal del muslo",
+    "funcion": "Extensión de rodilla",
+    "tren": "Inferior",
+    "grupo_muscular": "Grande",
+    "subdivisiones": ["Vasto Lateral", "Vasto Medial", "Vasto Intermedio", "Recto Femoral"]
+  },
+  {
+    "id": "isquiotibial",
+    "nombre": "Isquiotibial",
+    "localizacion": "Parte posterior del muslo",
+    "funcion": "Flexión de rodilla y extensión de cadera",
+    "tren": "Inferior",
+    "grupo_muscular": "Grande",
+    "subdivisiones": ["Bíceps Femoral", "Semitendinoso", "Semimembranoso"]
+  },
+  {
+    "id": "gluteo",
+    "nombre": "Glúteo",
+    "localizacion": "Parte posterior de la pelvis",
+    "funcion": "Extensión y abducción de cadera",
+    "tren": "Inferior",
+    "grupo_muscular": "Grande",
+    "subdivisiones": ["Glúteo Mayor", "Glúteo Medio", "Glúteo Menor"]
+  },
+  {
+    "id": "abdominales",
+    "nombre": "Abdominales",
+    "localizacion": "Zona central del tronco",
+    "funcion": "Flexión del tronco y estabilidad",
+    "tren": "Superior",
+    "grupo_muscular": "Mediano",
+    "subdivisiones": ["Recto Abdominal", "Oblicuo Externo", "Oblicuo Interno", "Transverso del Abdomen"]
+  },
+  {
+    "id": "gemelos",
+    "nombre": "Pantorrilla",
+    "localizacion": "Parte posterior de la pierna inferior",
+    "funcion": "Flexión plantar",
+    "tren": "Inferior",
+    "grupo_muscular": "Pequeño",
+    "subdivisiones": ["Gastrocnemio Medial", "Gastrocnemio Lateral", "Sóleo"]
+  },
+  {
+    "id": "lumbar",
+    "nombre": "Lumbares",
+    "localizacion": "Parte baja de la espalda",
+    "funcion": "Extensión de la columna",
+    "tren": "Superior",
+    "grupo_muscular": "Pequeño",
+    "subdivisiones": ["Erectores Espinales", "Multífidos"]
+  },
+  {
+    "id": "aductor",
+    "nombre": "Aductores",
+    "localizacion": "Interior del muslo",
+    "funcion": "Aducción de cadera",
+    "tren": "Inferior",
+    "grupo_muscular": "Mediano",
+    "subdivisiones": ["Aductor Mayor", "Aductor Largo", "Aductor Corto", "Grácil"]
+  }
+]

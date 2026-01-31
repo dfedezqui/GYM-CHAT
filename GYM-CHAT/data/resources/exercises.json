@@ -1,0 +1,412 @@
+[
+  {
+    "id": "press_banca_plano",
+    "nombre_agrupado": "Press de Banca Plano",
+    "musculo_objetivo": "pectoral",
+    "tipo": "Compuesto",
+    "descripcion_general": "Empuje horizontal perpendicular al torso. Es el constructor base de la fuerza del tren superior.",
+    "variantes": [
+      {
+        "equipo": "Barra",
+        "enfoque": "Fuerza máxima y carga total",
+        "tip_clave": "Retrae las escápulas y mantén los pies firmes en el suelo para mayor estabilidad."
+      },
+      {
+        "equipo": "Mancuernas",
+        "enfoque": "Simetría y mayor rango de recorrido",
+        "tip_clave": "Permite juntar las manos arriba para una mayor contracción sin chocar los pesos."
+      },
+      {
+        "equipo": "Máquina / Multipower",
+        "enfoque": "Tensión mecánica segura (sin estabilización)",
+        "tip_clave": "Ideal para llegar al fallo muscular sin riesgo de que la barra te caiga encima."
+      }
+    ]
+  },
+  {
+    "id": "press_banca_inclinado",
+    "nombre_agrupado": "Press Inclinado",
+    "musculo_objetivo": "pectoral",
+    "tipo": "Compuesto",
+    "descripcion_general": "Empuje en ángulo de 30-45º para enfatizar las fibras claviculares (superiores).",
+    "variantes": [
+      {
+        "equipo": "Mancuernas",
+        "enfoque": "Hipertrofia superior",
+        "tip_clave": "Ajusta el banco a 30º; si subes a 45º o más, el deltoides frontal robará el trabajo."
+      },
+      {
+        "equipo": "Barra",
+        "enfoque": "Potencia superior",
+        "tip_clave": "Baja la barra hacia la parte alta del pecho, casi tocando la clavícula."
+      }
+    ]
+  },
+  {
+    "id": "aperturas_pecho",
+    "nombre_agrupado": "Aperturas (Flyes)",
+    "musculo_objetivo": "pectoral",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Aducción del hombro sin ayuda del tríceps, aislando el pecho mediante estiramiento.",
+    "variantes": [
+      {
+        "equipo": "Poleas (Cruce)",
+        "enfoque": "Tensión constante en todo el recorrido",
+        "tip_clave": "Cruza las manos al final del movimiento para activar la parte interna del pecho."
+      },
+      {
+        "equipo": "Mancuernas",
+        "enfoque": "Énfasis en el estiramiento máximo",
+        "tip_clave": "No toques las mancuernas arriba, pierdes la tensión. Mantén una ligera flexión de codo."
+      },
+      {
+        "equipo": "Máquina Pec-Deck",
+        "enfoque": "Aislamiento estricto (principiantes)",
+        "tip_clave": "Mantén los codos a la altura de los hombros, no los dejes caer."
+      }
+    ]
+  },
+  {
+    "id": "press_vertical",
+    "nombre_agrupado": "Press Militar / Vertical",
+    "musculo_objetivo": "deltoides",
+    "tipo": "Compuesto",
+    "descripcion_general": "Empuje vertical por encima de la cabeza. Clave para la anchura y salud del hombro.",
+    "variantes": [
+      {
+        "equipo": "Barra (Militar de pie)",
+        "enfoque": "Fuerza global y Core",
+        "tip_clave": "Contrae glúteos y abdomen para no arquear la lumbar al empujar."
+      },
+      {
+        "equipo": "Mancuernas (Sentado)",
+        "enfoque": "Hipertrofia del deltoides",
+        "tip_clave": "Baja hasta que las mancuernas toquen los hombros para rango completo."
+      },
+      {
+        "equipo": "Press Arnold",
+        "enfoque": "Activación completa (Anterior/Lateral)",
+        "tip_clave": "Gira las muñecas suavemente mientras subes; inicia con palmas mirando a tu cara."
+      }
+    ]
+  },
+  {
+    "id": "elevaciones_laterales",
+    "nombre_agrupado": "Elevaciones Laterales",
+    "musculo_objetivo": "deltoides",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Abducción del brazo. Es el único ejercicio que ensancha visualmente los hombros (cabeza lateral).",
+    "variantes": [
+      {
+        "equipo": "Mancuernas",
+        "enfoque": "Clásico",
+        "tip_clave": "Imagina que empujas las paredes hacia fuera, no solo subir las manos."
+      },
+      {
+        "equipo": "Polea Baja",
+        "enfoque": "Tensión en la parte baja",
+        "tip_clave": "Pasa el cable por detrás del cuerpo para mayor estiramiento inicial."
+      }
+    ]
+  },
+  {
+    "id": "traccion_vertical",
+    "nombre_agrupado": "Jalones y Dominadas",
+    "musculo_objetivo": "dorsal",
+    "tipo": "Compuesto",
+    "descripcion_general": "Tracción vertical para desarrollar la amplitud (forma de V) de la espalda.",
+    "variantes": [
+      {
+        "equipo": "Dominadas (Peso corporal)",
+        "enfoque": "Fuerza relativa y control",
+        "tip_clave": "Deprime las escápulas (hombros abajo) antes de empezar a doblar los codos."
+      },
+      {
+        "equipo": "Jalón al pecho (Polea)",
+        "enfoque": "Hipertrofia controlada",
+        "tip_clave": "Inclínate ligeramente atrás, pero no uses el peso del cuerpo para dar tirones."
+      },
+      {
+        "equipo": "Agarre Neutro/Cerrado",
+        "enfoque": "Énfasis en fibras bajas/medias",
+        "tip_clave": "Lleva los codos hacia las costillas, no hacia afuera."
+      }
+    ]
+  },
+  {
+    "id": "traccion_horizontal",
+    "nombre_agrupado": "Remos (Rows)",
+    "musculo_objetivo": "dorsal",
+    "tipo": "Compuesto",
+    "descripcion_general": "Tracción horizontal. Aporta densidad y grosor a la espalda.",
+    "variantes": [
+      {
+        "equipo": "Remo con Barra (Pendlay/90º)",
+        "enfoque": "Potencia y grosor total",
+        "tip_clave": "Espalda paralela al suelo. Si te levantas mucho, se convierte en encogimiento de trapecio."
+      },
+      {
+        "equipo": "Remo con Mancuerna (Unilateral)",
+        "enfoque": "Rango de movimiento y corrección de asimetrías",
+        "tip_clave": "Lleva la mancuerna hacia la cadera, no hacia el pecho, para activar el dorsal."
+      },
+      {
+        "equipo": "Remo Gironda (Polea Baja)",
+        "enfoque": "Estiramiento y contracción",
+        "tip_clave": "Deja que los hombros se adelanten al estirar y retráelos fuerte al tirar."
+      }
+    ]
+  },
+  {
+    "id": "peso_muerto_hinge",
+    "nombre_agrupado": "Bisagra de Cadera (Peso Muerto)",
+    "musculo_objetivo": "isquiotibial",
+    "tipo": "Compuesto",
+    "descripcion_general": "El patrón de movimiento fundamental para la cadena posterior.",
+    "variantes": [
+      {
+        "equipo": "Peso Muerto Convencional",
+        "enfoque": "Fuerza sistémica total",
+        "tip_clave": "La barra debe viajar pegada a las tibias. Empuja el suelo con los pies."
+      },
+      {
+        "equipo": "Peso Muerto Rumano",
+        "enfoque": "Hipertrofia de isquios y glúteo",
+        "tip_clave": "Mantén las rodillas semiflexionadas pero fijas; el movimiento es solo de cadera atrás-adelante."
+      }
+    ]
+  },
+  {
+    "id": "sentadilla",
+    "nombre_agrupado": "Sentadilla (Squat)",
+    "musculo_objetivo": "cuadriceps",
+    "tipo": "Compuesto",
+    "descripcion_general": "Flexión de rodilla y cadera. El rey de los ejercicios de pierna.",
+    "variantes": [
+      {
+        "equipo": "Barra Trasera (Back Squat)",
+        "enfoque": "Fuerza y masa general",
+        "tip_clave": "Abre las rodillas hacia afuera en la bajada para activar el glúteo y proteger articulaciones."
+      },
+      {
+        "equipo": "Sentadilla Frontal",
+        "enfoque": "Énfasis en cuádriceps y Core",
+        "tip_clave": "Mantén los codos altos todo el tiempo para que la barra no caiga."
+      },
+      {
+        "equipo": "Sentadilla Goblet (Mancuerna)",
+        "enfoque": "Aprendizaje y movilidad",
+        "tip_clave": "Excelente para principiantes o para calentar caderas."
+      }
+    ]
+  },
+  {
+    "id": "prensa_piernas",
+    "nombre_agrupado": "Prensa de Piernas",
+    "musculo_objetivo": "cuadriceps",
+    "tipo": "Compuesto",
+    "descripcion_general": "Empuje de piernas en máquina, eliminando la carga sobre la columna.",
+    "variantes": [
+      {
+        "equipo": "Pies bajos y cerrados",
+        "enfoque": "Enfoque en Cuádriceps",
+        "tip_clave": "No despegues el glúteo del asiento al bajar o te harás daño en la lumbar."
+      },
+      {
+        "equipo": "Pies altos y separados",
+        "enfoque": "Enfoque en Isquios/Aductores",
+        "tip_clave": "Empuja desde el talón."
+      }
+    ]
+  },
+  {
+    "id": "zancadas",
+    "nombre_agrupado": "Zancadas (Lunges)",
+    "musculo_objetivo": "gluteo",
+    "tipo": "Compuesto",
+    "descripcion_general": "Ejercicio unilateral fundamental para la estabilidad y el desarrollo de piernas.",
+    "variantes": [
+      {
+        "equipo": "Zancada hacia atrás (Reverse)",
+        "enfoque": "Cadena posterior y seguridad de rodilla",
+        "tip_clave": "Inclina el torso ligeramente adelante para mayor activación del glúteo."
+      },
+      {
+        "equipo": "Sentadilla Búlgara",
+        "enfoque": "Aislamiento unilateral máximo",
+        "tip_clave": "Si el pie está lejos del banco: Glúteo. Si está cerca: Cuádriceps."
+      }
+    ]
+  },
+  {
+    "id": "hip_thrust",
+    "nombre_agrupado": "Empuje de Cadera (Hip Thrust)",
+    "musculo_objetivo": "gluteo",
+    "tipo": "Compuesto",
+    "descripcion_general": "El mejor ejercicio para aislar el glúteo mayor con carga alta.",
+    "variantes": [
+      {
+        "equipo": "Barra",
+        "enfoque": "Fuerza y masa",
+        "tip_clave": "Mantén la mirada al frente (barbilla al pecho) para no arquear la espalda baja."
+      },
+      {
+        "equipo": "Máquina / Multipower",
+        "enfoque": "Facilidad de configuración",
+        "tip_clave": "Concéntrate en el bloqueo arriba (apretar glúteo) durante 1 segundo."
+      }
+    ]
+  },
+  {
+    "id": "extension_cuadriceps",
+    "nombre_agrupado": "Extensión de Rodilla",
+    "musculo_objetivo": "cuadriceps",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Único ejercicio que trabaja el Recto Femoral en su posición acortada.",
+    "variantes": [
+      {
+        "equipo": "Máquina",
+        "enfoque": "Detalle y Recto Femoral",
+        "tip_clave": "No des patadas. Sube explosivo, aguanta 1 segundo y baja lento."
+      }
+    ]
+  },
+  {
+    "id": "curl_femoral",
+    "nombre_agrupado": "Curl de Isquios (Leg Curl)",
+    "musculo_objetivo": "isquiotibial",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Flexión de rodilla contra resistencia.",
+    "variantes": [
+      {
+        "equipo": "Tumbado",
+        "enfoque": "Porción externa del bíceps femoral",
+        "tip_clave": "Evita levantar la cadera del banco al contraer las piernas."
+      },
+      {
+        "equipo": "Sentado",
+        "enfoque": "Estiramiento (Mayor hipertrofia)",
+        "tip_clave": "Científicamente superior por trabajar el músculo en elongación."
+      }
+    ]
+  },
+  {
+    "id": "curl_biceps",
+    "nombre_agrupado": "Curl de Bíceps Supino",
+    "musculo_objetivo": "biceps",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Flexión de codo con palmas mirando hacia arriba.",
+    "variantes": [
+      {
+        "equipo": "Barra Recta / Z",
+        "enfoque": "Carga y masa general",
+        "tip_clave": "Barra Z es más amigable para las muñecas. Mantén codos pegados al cuerpo."
+      },
+      {
+        "equipo": "Banco Inclinado (Mancuernas)",
+        "enfoque": "Cabeza larga (Pico del bíceps)",
+        "tip_clave": "El codo debe quedar detrás del torso para estirar la cabeza larga."
+      }
+    ]
+  },
+  {
+    "id": "curl_biceps_neutro",
+    "nombre_agrupado": "Curl Martillo",
+    "musculo_objetivo": "biceps",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Flexión de codo con agarre neutro.",
+    "variantes": [
+      {
+        "equipo": "Mancuernas",
+        "enfoque": "Braquial y densidad del brazo",
+        "tip_clave": "Cruzar la mancuerna hacia el pecho opuesto enfatiza el braquiorradial."
+      },
+      {
+        "equipo": "Cuerda en Polea",
+        "enfoque": "Tensión constante",
+        "tip_clave": "Abre la cuerda ligeramente al final del movimiento."
+      }
+    ]
+  },
+  {
+    "id": "extension_triceps",
+    "nombre_agrupado": "Extensión de Tríceps (Pushdown)",
+    "musculo_objetivo": "triceps",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Extensión de codo con el brazo pegado al cuerpo.",
+    "variantes": [
+      {
+        "equipo": "Polea con Cuerda",
+        "enfoque": "Cabeza lateral",
+        "tip_clave": "Abre las muñecas hacia afuera al final para contracción máxima."
+      },
+      {
+        "equipo": "Barra recta/V",
+        "enfoque": "Mover más carga",
+        "tip_clave": "Mantén los hombros deprimidos, no te subas encima de la barra."
+      }
+    ]
+  },
+  {
+    "id": "extension_sobre_cabeza",
+    "nombre_agrupado": "Extensión sobre cabeza (Overhead)",
+    "musculo_objetivo": "triceps",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Trabajo del tríceps con el codo por encima del hombro, vital para la cabeza larga.",
+    "variantes": [
+      {
+        "equipo": "Press Francés (Barra Z)",
+        "enfoque": "Constructor de masa clásico",
+        "tip_clave": "Baja la barra hacia la coronilla, no hacia la frente, para cuidar los codos."
+      },
+      {
+        "equipo": "Copa / Katana (Mancuerna/Polea)",
+        "enfoque": "Estiramiento máximo",
+        "tip_clave": "Intenta que los codos no se abran demasiado hacia los lados."
+      }
+    ]
+  },
+  {
+    "id": "elevacion_talones",
+    "nombre_agrupado": "Elevación de Talones",
+    "musculo_objetivo": "gemelos",
+    "tipo": "Aislamiento",
+    "descripcion_general": "Flexión plantar del pie.",
+    "variantes": [
+      {
+        "equipo": "De pie (Máquina/Smith)",
+        "enfoque": "Gastrocnemio (Gemelo visible)",
+        "tip_clave": "La rodilla debe estar totalmente bloqueada (recta) para que trabaje el gemelo."
+      },
+      {
+        "equipo": "Sentado",
+        "enfoque": "Sóleo (Músculo profundo)",
+        "tip_clave": "Al doblar la rodilla, desactivas el gemelo y trabajas el ancho del tobillo."
+      }
+    ]
+  },
+  {
+    "id": "core_estabilidad",
+    "nombre_agrupado": "Trabajo de Core / Abdomen",
+    "musculo_objetivo": "abdominales",
+    "tipo": "Estabilidad/Aislamiento",
+    "descripcion_general": "Ejercicios para la sección media.",
+    "variantes": [
+      {
+        "equipo": "Plancha Abdominal (Plank)",
+        "enfoque": "Estabilidad (Isométrico)",
+        "tip_clave": "Aprieta glúteos y abdomen. Si duele la lumbar, estás perdiendo la postura."
+      },
+      {
+        "equipo": "Crunch en Polea / Rueda abdominal",
+        "enfoque": "Hipertrofia de los cuadros",
+        "tip_clave": "No dobles la cadera, imagina que quieres enrollar tu pecho hacia tu ombligo."
+      },
+      {
+        "equipo": "Elevación de piernas (Colgado)",
+        "enfoque": "Abdomen inferior",
+        "tip_clave": "Levanta la pelvis hacia el pecho, no solo subas las piernas."
+      }
+    ]
+  }
+]

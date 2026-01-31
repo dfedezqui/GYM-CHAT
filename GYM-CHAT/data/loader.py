@@ -1,452 +1,312 @@
-# Cargar datos
 import json
 import os
+import random
 
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# ==========================================
+# CARGA DE DATOS (Igual que antes)
+# ==========================================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_PATH = os.path.join(BASE_DIR, "resources")
+
 with open(os.path.join(JSON_PATH, "exercises.json"), "r", encoding="utf-8") as f:
     ejercicios_data = json.load(f)
 with open(os.path.join(JSON_PATH, "muscles.json"), "r", encoding="utf-8") as f:
     musculos_data = json.load(f)
-    
 
-import random
+# ==========================================
+# GENERADORES DE TEXTO NATURAL
+# ==========================================
 
 def saludar_usuario():
     saludos = [
-        "¡Hola! ¿Listo para entrenar?",
-        "¡Bienvenido! ¿En qué puedo ayudarte con tu entrenamiento hoy?",
-        "¡Hola atleta! ¿Quieres mejorar fuerza, hipertrofia o aprender algo nuevo?",
-        "¡Ey! Aquí estoy para ayudarte con rutinas, ejercicios o dudas musculares."
+        "¡Buenas! ¿Qué tal ese cuerpo? Dime, ¿qué quieres entrenar hoy?",
+        "¡Hola! Aquí estoy listo para echarte una mano con la rutina. ¿Qué necesitas saber?",
+        "¡Ey! Vamos a ver cómo mejorar ese físico. ¿Tienes dudas con algún ejercicio?",
     ]
     return random.choice(saludos)
 
-
 def despedir_usuario():
     despedidas = [
-        "¡Buen trabajo! Recuerda que la constancia vence al talento 💪",
-        "¡Hasta la próxima! Mantente fuerte y enfocado.",
-        "¡Nos vemos pronto! Sigue progresando y cuidando tu forma.",
-        "¡Cuídate! Estoy aquí cuando necesites más ayuda o motivación.",
-        "¡Adiós! Recuerda al fallo o muere flaco.",
+        "¡Venga, a darle duro! Si te surgen más dudas, aquí estaré.",
+        "¡Buen entreno! Recuerda descansar bien, que ahí es donde se crece.",
+        "¡Nos vemos! Cuida la técnica y mete peso con cabeza.",
     ]
     return random.choice(despedidas)
 
 def no_entender():
-        return (
-            "Puedo ayudarte con los músculos y ejercicios de forma natural. 💪\n"
-            "Por ejemplo, puedes pedirme que:\n"
-            "- Te explique un ejercicio o un músculo\n"
-            "- Compare dos ejercicios o dos músculos\n"
-            "- Te sugiera ejercicios según el músculo y el objetivo (fuerza o hipertrofia)\n"
-            "- Describa variantes o porciones musculares\n"
-            "- O simplemente resolver una duda general que tengas\n\n"
-            "¡Tú dime y empezamos! 🔍"
-        )
+    return (
+        "Mmm, no estoy seguro de haberte entendido bien. Háblame como si estuviéramos en el gym. "
+        "Pregúntame cosas como '¿Cómo entreno el pecho?', 'Explícame el press banca' o 'Diferencias entre sentadilla y prensa'. "
+        "¡Inténtalo de nuevo!"
+    )
+
+# ==========================================
+# FUNCIONES DE MÚSCULOS (Estilo Conversacional)
+# ==========================================
 
 def explicar_musculo(nombre_musculo):
-    """
-    Busca y explica la información de un músculo dado su nombre.
-
-    Parámetros:
-    nombre_musculo (str): Nombre del músculo que se quiere consultar.
-
-    Retorna:
-    str: Texto descriptivo con la ubicación, función y segmentos musculares, 
-         incluyendo ejercicios para cada segmento. Si no se encuentra el músculo,
-         devuelve un mensaje indicando que no se encontró información.
-    """ 
-
-    musculo = next((m for m in musculos_data if m['Nombre'].lower() == nombre_musculo.lower()), None)
+    musculo = next((m for m in musculos_data if m['nombre'].lower() == nombre_musculo.lower()), None)
+    
     if not musculo:
-        return f"Oh mi gymbro, no he podido encontrar información acerca de '{nombre_musculo}', ¿Te puede ayudar con otro musculo?."
+        return f"Oye, pues no me suena el músculo '{nombre_musculo}'. A lo mejor lo conozco por su nombre técnico, ¿puedes probar de otra forma?"
 
+    # Construcción narrativa
     texto = (
-        f"El {musculo['Nombre']} es un músculo que está ubicado en {musculo['Localizacion'].lower()}. "
-        f"Su función principal {musculo['Funcion'].lower()}.\n\n"
+        f"Hablemos del **{musculo['nombre']}**. Es un músculo fundamental que tienes ubicado en la {musculo['localizacion'].lower()}. "
+        f"Su función principal es clara: se encarga de {musculo['funcion'].lower()}. "
+        f"Al ser un grupo {musculo['grupo_muscular'].lower()} del tren {musculo['tren'].lower()}, juega un papel clave en tu físico.\n\n"
     )
 
-    tamano = musculo.get("Tamanio", musculo.get("Tamaño", "desconocido")).lower()
-    sinergistas = musculo.get("Sinergistas", musculo.get("Sinergia", []))
-    if isinstance(sinergistas, str):  # Por si está como cadena en lugar de lista
-        sinergistas = [sinergistas]
-    sinergia_str = ", ".join(sinergistas).lower() if sinergistas else "ningún músculo sinérgico"
-
-    if tamano == "grande":
-        recuperacion = "72 h"
-        recomendacion = "principal"
-    elif tamano == "mediano":
-        recuperacion = "48 h"
-        recomendacion = "secundario"
-    elif tamano == "pequeño":
-        recuperacion = "24 h"
-        recomendacion = "secundario"
-    else:
-        recuperacion = "desconocido"
-        recomendacion = "secundario"
-
-    texto += (
-        f"Al ser un músculo {tamano}, se recomienda entrenarlo de forma {recomendacion} "
-        f"junto a los músculos sinérgicos: {sinergia_str}. "
-        f"Este músculo suele necesitar aproximadamente {recuperacion} para recuperarse completamente.\n\n"
-        "Cuenta con varios segmentos, los cuales se pueden entrenar con ejercicios enfocados en su zona particular:\n\n"
-    )
-
-    segmentos = musculo.get('Segmentos_musculares', [])
-    for i, segmento in enumerate(segmentos, start=1):
-        ejercicios = ", ".join(segmento.get('Ejercicios', []))
+    if "subdivisiones" in musculo:
+        partes = ", ".join(musculo['subdivisiones'])
         texto += (
-            f"{i}. {segmento['Nombre']}:\n"
-            f"   Se localiza en {segmento['Localizacion'].lower()} y se puede trabajar con ejercicios como {ejercicios}.\n\n"
+            f"Una cosa importante es que no es una pieza única; se divide anatómicamente en varias partes: **{partes}**. "
+            "Es bueno saberlo para atacarlo desde distintos ángulos.\n\n"
         )
+
+    ejercicios_relacionados = [
+        e['nombre_agrupado'] for e in ejercicios_data 
+        if e['musculo_objetivo'] == musculo['id']
+    ]
+
+    if ejercicios_relacionados:
+        top_ejercicios = ", ".join(ejercicios_relacionados[:4])
+        texto += f"Si quieres desarrollarlo, mis ejercicios favoritos para empezar serían: **{top_ejercicios}**, entre otros."
+    else:
+        texto += "Ahora mismo no tengo ejercicios específicos listados para este, pero cualquier movimiento que replique su función te servirá."
+
     return texto
 
 
-
-def explicar_porcion_muscular(nombre_musculo, porcion):
-    """
-    Devuelve una explicación específica de una porción de un músculo.
-
-    Parámetros:
-    nombre_musculo (str): Nombre del músculo principal.
-    porcion (str): Nombre del segmento muscular específico.
-
-    Retorna:
-    str: Descripción de la porción y ejercicios recomendados.
-    """
-    musculo = next((m for m in musculos_data if m['Nombre'].lower() == nombre_musculo.lower()), None)
+def explicar_porcion_muscular(nombre_musculo, porcion_clave):
+    musculo = next((m for m in musculos_data if m['nombre'].lower() == nombre_musculo.lower()), None)
     if not musculo:
-        return f"No se encontró el músculo '{nombre_musculo}'. ¿Podrías verificar el nombre?"
+        return f"No encuentro el músculo '{nombre_musculo}' en mi base de datos."
 
-    segmentos = musculo.get("Segmentos_musculares", [])
-    segmento = next((s for s in segmentos if s["Nombre"].lower() == porcion.lower()), None)
-    if not segmento:
-        return f"No se encontró la porción '{porcion}' dentro del músculo '{nombre_musculo}'. ¿Podrías verificar el nombre?"
+    recomendaciones = []
+    ejercicios_musculo = [e for e in ejercicios_data if e['musculo_objetivo'] == musculo['id']]
+    
+    for ej in ejercicios_musculo:
+        for var in ej['variantes']:
+            if porcion_clave.lower() in var['enfoque'].lower():
+                recomendaciones.append(f"- Con el **{ej['nombre_agrupado']}** (usando {var['equipo']}), ya que {var['enfoque'].lower()}.")
 
-    # Ejercicios específicos del segmento
-    ejercicios_principales = ", ".join(segmento.get("Ejercicios", []))
+    if not recomendaciones:
+        return (f"Verás, el {nombre_musculo} tiene esa parte, pero ahora mismo no tengo un ejercicio etiquetado *exclusivamente* "
+                f"para la zona '{porcion_clave}'. Lo mejor es que hagas los ejercicios básicos del músculo general.")
 
-    # Ejercicios de otras porciones (actúa secundariamente)
-    ejercicios_secundarios = []
-    for s in segmentos:
-        if s["Nombre"].lower() != porcion.lower():
-            ejercicios_secundarios.extend(s.get("Ejercicios", []))
-
-    ejercicios_secundarios_texto = ", ".join(ejercicios_secundarios)
-
-    return (
-        f"El músculo {porcion} pertenece al {nombre_musculo}, se localiza en {segmento['Localizacion'].lower()}.\n\n"
-        f"Actúa también de forma secundaria en ejercicios como: {ejercicios_secundarios_texto}.\n\n"
-        f"Sin embargo, si quieres enfocarte específicamente en esta porción, los mejores ejercicios son: {ejercicios_principales}."
+    texto = (
+        f"¡Buena pregunta! Muchos se olvidan de los detalles. Si quieres enfatizar concretamente la parte **{porcion_clave}** "
+        f"del {nombre_musculo}, te sugiero lo siguiente:\n\n"
+        + "\n".join(recomendaciones) + "\n\n"
+        "Prueba a meter estos en tu rutina y notarás la diferencia en esa zona."
     )
+    return texto
+
 
 def comparar_musculos(nombre1, nombre2):
-    """
-    Compara dos músculos: ubicación, función, tamaño, sinergia y ejercicios.
+    m1 = next((m for m in musculos_data if m['nombre'].lower() == nombre1.lower()), None)
+    m2 = next((m for m in musculos_data if m['nombre'].lower() == nombre2.lower()), None)
 
-    Parámetros:
-    nombre1 (str): Primer músculo.
-    nombre2 (str): Segundo músculo.
+    if not m1 or not m2:
+        return "Me falta información sobre uno de esos dos músculos para poder compararlos bien."
 
-    Retorna:
-    str: Comparación entre ambos músculos con contexto anatómico y recomendaciones.
-    """
-
-    # Buscar músculos en los datos
-    musculo1 = next((m for m in musculos_data if m['Nombre'].lower() == nombre1.lower()), None)
-    musculo2 = next((m for m in musculos_data if m['Nombre'].lower() == nombre2.lower()), None)
-
-    if not musculo1 or not musculo2:
-        faltantes = []
-        if not musculo1:
-            faltantes.append(nombre1)
-        if not musculo2:
-            faltantes.append(nombre2)
-        return f"No se encontró información sobre: {', '.join(faltantes)}"
-
-    tren1 = musculo1.get("Tren", "desconocido").lower()
-    tren2 = musculo2.get("Tren", "desconocido").lower()
-    tam1 = musculo1.get("Tamaño", "desconocido").lower()
-    tam2 = musculo2.get("Tamaño", "desconocido").lower()
-
-    sinergistas1 = [s.lower() for s in musculo1.get("Sinergia", "").split(",")] if isinstance(musculo1.get("Sinergia"), str) else []
-    sinergistas2 = [s.lower() for s in musculo2.get("Sinergia", "").split(",")] if isinstance(musculo2.get("Sinergia"), str) else []
-
-    nombre1_lower = musculo1["Nombre"].lower()
-    nombre2_lower = musculo2["Nombre"].lower()
-
-    # Comprobar sinergia mutua
-    sinergia = (nombre2_lower in sinergistas1) or (nombre1_lower in sinergistas2)
-
-    # Introducción contextual
-    intro = ""
-    if tren1 == tren2:
-        intro += f"Ambos músculos pertenecen al tren {tren1} del cuerpo.\n"
-    else:
-        intro += f"{nombre1} pertenece al tren {tren1}, mientras que {nombre2} está en el tren {tren2}.\n"
-
-    intro += f"{nombre1} es un músculo {tam1}, y {nombre2} es un músculo {tam2}.\n"
-
-    if sinergia:
-        intro += (
-            f"Además, estos músculos suelen trabajar juntos en movimientos compuestos. "
-            f"Por ejemplo, el {nombre1} y el {nombre2} pueden colaborar en ejercicios combinados. "
-            f"💡 Se recomienda entrenarlos en la misma sesión si buscas sinergia muscular.\n\n"
-        )
-    else:
-        intro += (
-            f"No tienen una relación sinérgica directa habitual, pero pueden combinarse según el enfoque de tu rutina.\n\n"
-        )
-
-    def resumen_musculo(m):
-        segmentos = ", ".join(seg['Nombre'] for seg in m.get('Segmentos_musculares', []))
-        ejercicios = []
-        for seg in m.get('Segmentos_musculares', []):
-            ejercicios += seg.get('Ejercicios', [])
-        ejercicios_unicos = ", ".join(sorted(set(ejercicios)))
-        return (
-            f"- Ubicación: {m['Localizacion']}\n"
-            f"- Función principal: {m['Funcion']}\n"
-            f"- Segmentos: {segmentos}\n"
-            f"- Ejercicios comunes: {ejercicios_unicos}"
-        )
-
-    comparacion = (
-        f"📌 {nombre1}:\n{resumen_musculo(musculo1)}\n\n"
-        f"📌 {nombre2}:\n{resumen_musculo(musculo2)}"
-    )
-
-    return f"Comparación entre {nombre1} y {nombre2}:\n\n{intro}{comparacion}"
+    relacion = "pertenecen al mismo tren" if m1['tren'] == m2['tren'] else "están en zonas opuestas del cuerpo"
     
-
-def explicar_ejercicio(nombre_ejercicio):
-    """
-    Busca y explica la información de un ejercicio dado su nombre.
-
-    Parámetros:
-    nombre_ejercicio (str): Nombre del ejercicio que se quiere consultar.
-
-    Retorna:
-    str: Texto descriptivo con músculos principales y secundarios involucrados, 
-         la ejecución del ejercicio, variantes con descripción y sus puntos fuertes y débiles,
-         y sugerencia sobre su orden en la rutina y tipo de estímulo.
-    """
-
-    ejercicio = next((e for e in ejercicios_data if e['Nombre'].lower() == nombre_ejercicio.lower()), None)
-    if not ejercicio:
-        return f"Perdona, no encontré información sobre '{nombre_ejercicio}'. ¿Quieres que te ayude con otro ejercicio?"
-
-    tipo_estimulo = ejercicio.get("Tipo_de_estímulo", "No especificado")
-
-    if tipo_estimulo == "Fuerza":
-        sugerencia_orden = "como primer o segundo ejercicio de tu rutina, para aprovechar mayor energía y rendimiento"
-    elif tipo_estimulo == "Hipertrofia":
-        sugerencia_orden = "en la segunda mitad o al final de tu rutina, cuando busques fatigar y aislar el músculo"
-    else:
-        sugerencia_orden = "en la parte de la rutina que mejor se ajuste a tus objetivos"
-
     texto = (
-        f"El {ejercicio['Nombre']} es un ejercicio que se enfoca principalmente en el {ejercicio['Musculo_principal_concreto'].lower()}, "
-        f"que forma parte del grupo muscular del {ejercicio['Musculo_principal'].lower()}.\n\n"
-        f"Además, este ejercicio también trabaja músculos secundarios como {', '.join(ejercicio['Musculos_secundarios_concretos']).lower()}.\n\n"
-        f"Para realizarlo correctamente, debes {ejercicio['Ejecucion'].lower()}\n\n"
-        f"Este ejercicio se clasifica como un ejercicio de *{tipo_estimulo.lower()}*, "
-        f"por lo que se recomienda incluirlo {sugerencia_orden}.\n\n"
-        "Entre sus variantes principales destacan:\n\n"
+        f"Vamos a ver las diferencias entre el **{m1['nombre']}** y el **{m2['nombre']}**.\n\n"
+        f"Por un lado tienes el **{m1['nombre']}**, que es un músculo {m1['grupo_muscular'].lower()} diseñado para {m1['funcion'].lower()}. "
+        f"En cambio, el **{m2['nombre']}** es {m2['grupo_muscular'].lower()} y su trabajo es {m2['funcion'].lower()}.\n\n"
+        f"Básicamente, {relacion}. "
     )
 
-    variantes = ejercicio.get('Variantes', [])
-    for i, variante in enumerate(variantes, start=1):
-        texto += (
-            f"{i}. Tipo: {variante['Tipo']}\n"
-            f"   Esta variante se caracteriza por {variante['Descripcion'].lower()}\n"
-            f"   Entre sus puntos fuertes destaca que {variante['Puntos_fuertes'].lower()}\n"
-            f"   Sin embargo, presenta como desventaja que {variante['Puntos_debiles'].lower()}\n\n"
-        )
-
+    if m1['tren'] == m2['tren']:
+         texto += "Es probable que puedas trabajarlos en la misma sesión si haces una rutina dividida por zonas."
+    
     return texto
 
-def explicar_variante_ejercicio(nombre_ejercicio, tipo_variante):
-    """
-    Devuelve una explicación específica de una variante de un ejercicio.
+# ==========================================
+# FUNCIONES DE EJERCICIOS (Estilo Conversacional)
+# ==========================================
 
-    Parámetros:
-    nombre_ejercicio (str): Nombre del ejercicio principal.
-    tipo_variante (str): Tipo de variante (ej. "Máquina", "Mancuernas", "Polea").
-
-    Retorna:
-    str: Descripción detallada de la variante, ventajas, desventajas y cuándo usarla.
-    """
-
-    ejercicio = next((e for e in ejercicios_data if e['Nombre'].lower() == nombre_ejercicio.lower()), None)
+def explicar_ejercicio(nombre_ejercicio):
+    ejercicio = next((e for e in ejercicios_data if e['nombre_agrupado'].lower() == nombre_ejercicio.lower()), None)
+    
     if not ejercicio:
-        return f"No se encontró el ejercicio '{nombre_ejercicio}'. ¿Puedes verificar el nombre?"
+        return f"No me suena el ejercicio '{nombre_ejercicio}'. ¿Quizás tiene otro nombre o es una variante muy específica?"
 
-    variantes = ejercicio.get("Variantes", [])
-    variante = next((v for v in variantes if v["Tipo"].lower() == tipo_variante.lower()), None)
+    # Convertir lista de variantes en texto fluido
+    variantes_texto = []
+    for v in ejercicio['variantes']:
+        variantes_texto.append(f"con **{v['equipo']}** (ideal para {v['enfoque'].lower()})")
+    
+    lista_variantes = "; ".join(variantes_texto)
+
+    texto = (
+        f"El **{ejercicio['nombre_agrupado']}** es un clásico. Se trata de un ejercicio de tipo **{ejercicio['tipo'].lower()}** "
+        f"que va directo al {ejercicio['musculo_objetivo']}. \n\n"
+        f"La idea básica es esta: {ejercicio['descripcion_general'].lower()} \n\n"
+        f"Lo bueno es que no tienes una sola forma de hacerlo. Puedes probar {lista_variantes}. "
+        "Dependiendo de qué material tengas a mano o qué busques, elige una u otra."
+    )
+    return texto
+
+
+def explicar_variante_ejercicio(nombre_ejercicio, equipo_variante):
+    ejercicio = next((e for e in ejercicios_data if e['nombre_agrupado'].lower() == nombre_ejercicio.lower()), None)
+    
+    if not ejercicio:
+        return "Primero necesito encontrar el ejercicio base, y ese nombre no me sale."
+
+    variante = next((v for v in ejercicio['variantes'] if v['equipo'].lower() == equipo_variante.lower()), None)
+    
     if not variante:
-        return f"No se encontró la variante '{tipo_variante}' para el ejercicio '{nombre_ejercicio}'. ¿Puedes verificar el tipo?"
-
-    descripcion = variante.get("Descripcion", "Sin descripción.")
-    puntos_fuertes = variante.get("Puntos_fuertes", "No especificados.")
-    puntos_debiles = variante.get("Puntos_debiles", "No especificados.")
-    recomendacion = variante.get("Cuando_recomendarla", "Puedes incluirla según tu objetivo o disponibilidad de equipo.")
+        return f"Para el {ejercicio['nombre_agrupado']} no tengo registrada esa variante exacta. Intenta con Barra, Mancuernas o Máquina."
 
     return (
-        f"La variante **{tipo_variante}** del ejercicio **{nombre_ejercicio}** se caracteriza por:\n\n"
-        f"📌 **Descripción:** {descripcion}\n"
-        f"✅ **Puntos fuertes:** {puntos_fuertes}\n"
-        f"⚠️ **Puntos débiles:** {puntos_debiles}\n\n"
-        f"🗓️ **¿Cuándo usarla?** {recomendacion}"
+        f"Si decides hacer **{ejercicio['nombre_agrupado']}** usando **{variante['equipo']}**, estás tomando una buena decisión si buscas {variante['enfoque'].lower()}.\n\n"
+        f"Un consejo profesional para sacarle partido: {variante['tip_clave'].lower()} ¡Pruébalo así la próxima vez!"
     )
-
 
 
 def comparar_ejercicios(nombre1, nombre2):
-    """
-    Compara dos ejercicios: músculos involucrados, sinergia, orden sugerido y variantes.
+    e1 = next((e for e in ejercicios_data if e['nombre_agrupado'].lower() == nombre1.lower()), None)
+    e2 = next((e for e in ejercicios_data if e['nombre_agrupado'].lower() == nombre2.lower()), None)
 
-    Parámetros:
-    nombre1 (str): Nombre del primer ejercicio.
-    nombre2 (str): Nombre del segundo ejercicio.
+    if not e1 or not e2:
+        return "Me falta info de alguno de esos ejercicios para poder compararlos."
 
-    Retorna:
-    str: Comparación descriptiva entre ambos ejercicios con recomendaciones prácticas.
-    """
-
-    ej1 = next((e for e in ejercicios_data if e['Nombre'].lower() == nombre1.lower()), None)
-    ej2 = next((e for e in ejercicios_data if e['Nombre'].lower() == nombre2.lower()), None)
-
-    if not ej1 or not ej2:
-        faltantes = []
-        if not ej1:
-            faltantes.append(nombre1)
-        if not ej2:
-            faltantes.append(nombre2)
-        return f"No se encontró información sobre: {', '.join(faltantes)}"
-
-    # Grupo muscular principal
-    musc1 = ej1["Musculo_principal"]
-    musc2 = ej2["Musculo_principal"]
-
-    # Evaluar sinergia
-    sinergicos = False
-    principal1 = ej1["Musculo_principal_concreto"].lower()
-    principal2 = ej2["Musculo_principal_concreto"].lower()
-    secundarios1 = [m.lower() for m in ej1.get("Musculos_secundarios_concretos", [])]
-    secundarios2 = [m.lower() for m in ej2.get("Musculos_secundarios_concretos", [])]
-
-    if (principal1 in secundarios2) or (principal2 in secundarios1) or (principal1 == principal2):
-        sinergicos = True
-
-    # Estímulo y orden
-    tipo1 = ej1.get("Tipo_de_estímulo", "No especificado")
-    tipo2 = ej2.get("Tipo_de_estímulo", "No especificado")
-
-    if tipo1 == "Fuerza" and tipo2 == "Hipertrofia":
-        orden = f"Para una rutina óptima, realiza primero **{ej1['Nombre']}** (fuerza) y luego **{ej2['Nombre']}** (hipertrofia)."
-    elif tipo2 == "Fuerza" and tipo1 == "Hipertrofia":
-        orden = f"Para una rutina óptima, realiza primero **{ej2['Nombre']}** (fuerza) y luego **{ej1['Nombre']}** (hipertrofia)."
+    # Lógica conversacional
+    texto = f"Es una comparación interesante: **{e1['nombre_agrupado']}** contra **{e2['nombre_agrupado']}**.\n\n"
+    
+    if e1['musculo_objetivo'] == e2['musculo_objetivo']:
+        texto += f"Ambos van a por el mismo objetivo: el **{e1['musculo_objetivo']}**. "
     else:
-        orden = f"Ambos ejercicios tienen un enfoque similar ({tipo1.lower()}), puedes alternarlos según tu fatiga o preferencias."
+        texto += f"Son muy distintos: el primero es para **{e1['musculo_objetivo']}** y el segundo para **{e2['musculo_objetivo']}**. "
 
-    # Texto introductorio
-    texto = (
-        f"🔍 Comparativa entre **{ej1['Nombre']}** y **{ej2['Nombre']}**:\n\n"
-        f"- **{ej1['Nombre']}** trabaja principalmente el **{ej1['Musculo_principal_concreto']}** del grupo **{musc1}**.\n"
-        f"- **{ej2['Nombre']}** se enfoca en el **{ej2['Musculo_principal_concreto']}** del grupo **{musc2}**.\n\n"
-    )
+    texto += f"El {e1['nombre_agrupado']} es un movimiento {e1['tipo'].lower()}, mientras que el {e2['nombre_agrupado']} es {e2['tipo'].lower()}.\n\n"
 
-    if sinergicos:
-        texto += "✅ *Estos ejercicios tienen sinergia*, ya que comparten músculos principales o secundarios, por lo que pueden complementarse bien en la misma rutina.\n\n"
-    else:
-        texto += "ℹ️ *No presentan sinergia directa*, pero pueden combinarse si se quiere un trabajo completo o por contraste.\n\n"
-
-    texto += f"⚖️ {orden}\n\n"
-
-    # Esquema de comparación
-    def resumen_ejercicio(e):
-        secundarios = ", ".join(e.get("Musculos_secundarios_concretos", []))
-        variantes = "\n".join(
-            [f"  - {v['Tipo']}: {v['Descripcion']}" for v in e.get("Variantes", [])]
+    # Recomendación de orden
+    if e1['tipo'] == "Compuesto" and e2['tipo'] == "Aislamiento":
+        texto += (
+            "Si vas a meter los dos en tu rutina, mi consejo es claro: **haz primero el Compuesto** (el primero) cuando estás fresco "
+            "para mover kilos, y deja el de Aislamiento para rematar al final."
         )
-        return f"🎯 Músculos secundarios: {secundarios}\n🧩 Variantes:\n{variantes}"
+    elif e2['tipo'] == "Compuesto" and e1['tipo'] == "Aislamiento":
+        texto += (
+            "En tu rutina, **deberías priorizar el segundo ejercicio** al principio, ya que es el compuesto pesado, "
+            "y usar el primero más tarde para bombear y detallar."
+        )
+    else:
+        texto += "Como tienen una naturaleza similar, puedes alternarlos o elegir el que más te guste según cómo te sientas hoy."
 
-    esquema = (
-        f"📌 **{ej1['Nombre']}**\n"
-        f"{resumen_ejercicio(ej1)}\n\n"
-        f"📌 **{ej2['Nombre']}**\n"
-        f"{resumen_ejercicio(ej2)}"
-    )
+    return texto
 
-    return texto + esquema
 
-def sugerir_ejercicios(musculo, objetivo="hipertrofia"):
-    """
-    Sugiere ejercicios según el grupo muscular principal y el tipo de estímulo deseado.
-
-    Parámetros:
-    musculo (str): Grupo muscular principal (ej. "Pectoral", "Bíceps", "Glúteo").
-    objetivo (str): Tipo de estímulo: "fuerza" o "hipertrofia".
-
-    Retorna:
-    str: Lista de ejercicios recomendados para ese músculo y objetivo.
-    """
-
-    objetivo = objetivo.lower()
-    if objetivo not in ["fuerza", "hipertrofia"]:
-        return "El objetivo debe ser 'fuerza' o 'hipertrofia'."
+def sugerir_ejercicios(musculo_objetivo, tipo="Compuesto"):
+    m_obj = next((m for m in musculos_data if m['nombre'].lower() == musculo_objetivo.lower()), None)
+    id_busqueda = m_obj['id'] if m_obj else musculo_objetivo.lower()
 
     encontrados = [
-        e for e in ejercicios_data
-        if e["Musculo_principal"].lower() == musculo.lower()
-        and e.get("Tipo_de_estímulo", "").lower() == objetivo
+        e for e in ejercicios_data 
+        if e['musculo_objetivo'] == id_busqueda and e['tipo'].lower() == tipo.lower()
     ]
 
     if not encontrados:
-        return f"No se encontraron ejercicios para el músculo '{musculo}' con objetivo '{objetivo}'."
+        return f"Pues mira, no he encontrado ejercicios de tipo '{tipo}' específicamente para {musculo_objetivo}. A lo mejor deberíamos probar otro enfoque."
 
-    respuesta = (
-        f"🎯 Ejercicios para **{musculo}** orientados a **{objetivo}**:\n\n"
+    # Formato lista natural
+    nombres = [e['nombre_agrupado'] for e in encontrados]
+    
+    if len(nombres) > 1:
+        lista_str = ", ".join(nombres[:-1]) + " y " + nombres[-1]
+    else:
+        lista_str = nombres[0]
+
+    return (
+        f"Si quieres darle caña al **{musculo_objetivo}** con ejercicios **{tipo.lower()}s**, tienes buenas opciones. "
+        f"Yo te recomendaría probar con: **{lista_str}**. ¡Son mano de santo!"
     )
-    for e in encontrados:
-        respuesta += f"• {e['Nombre']}: trabaja principalmente el {e['Musculo_principal_concreto'].lower()}\n"
-
-    return respuesta
 
 
+# ==========================================
+# GESTOR CENTRAL
+# ==========================================
 def devolver_mensaje(funcion, argumentos):
-    """
-    Devuelve un mensaje según la función y sus argumentos.
+    mapa_funciones = {
+        "saludar": saludar_usuario,
+        "despedir": despedir_usuario,
+        "no entender": no_entender,
+        "explicar musculo": explicar_musculo,
+        "explicar porcion": explicar_porcion_muscular,
+        "comparar musculos": comparar_musculos,
+        "explicar ejercicio": explicar_ejercicio,
+        "explicar variante": explicar_variante_ejercicio,
+        "comparar ejercicios": comparar_ejercicios,
+        "recomendar ejercicio": sugerir_ejercicios
+    }
 
-    Parámetros:
-    funcion (str): Nombre de la función a ejecutar.
-    argumentos (list): Lista de argumentos para la función.
+    if funcion in mapa_funciones:
+        try:
+            if argumentos:
+                return mapa_funciones[funcion](*argumentos)
+            else:
+                return mapa_funciones[funcion]()
+        except TypeError:
+             return "¡Ups! Me has dado un número de argumentos incorrecto para esa pregunta. Inténtalo de nuevo."
+    
+    return f"Vaya, esa función '{funcion}' no me suena de nada."
 
-    Retorna:
-    str: Mensaje generado por la función.
-    """
-    
-    if funcion == "saludar":
-        return saludar_usuario()
-    elif funcion == "despedir":
-        return despedir_usuario()
-    elif funcion == "no entender":
-        return no_entender()
-    elif funcion == "explicar musculo":
-        return explicar_musculo(*argumentos)
-    elif funcion == "explicar segmentoMusculo":
-        return explicar_porcion_muscular(*argumentos)
-    elif funcion == "comparar musculos":
-        return comparar_musculos(*argumentos)
-    elif funcion == "explicar ejercicio":
-        return explicar_ejercicio(*argumentos)
-    elif funcion == "explicar variante":
-        return explicar_variante_ejercicio(*argumentos)
-    elif funcion == "comparar ejercicios":
-        return comparar_ejercicios(*argumentos)
-    elif funcion == "recomendar ejercicio":
-        return sugerir_ejercicios(*argumentos)
-    
-    return f"Función '{funcion}' no reconocida."
+
+
+# ==========================================
+# BLOQUE MAIN DE PRUEBAS (Test de Personalidad)
+# ==========================================
+if __name__ == "__main__":
+    import time
+
+    def imprimir_test(titulo, funcion, args):
+        print(f"\n{'='*60}")
+        print(f"🧪 TEST: {titulo}")
+        print(f"❓ Input: {funcion} -> {args}")
+        print(f"{'-'*60}")
+        respuesta = devolver_mensaje(funcion, args)
+        print(f"🤖 BOT:\n{respuesta}")
+        print(f"{'='*60}\n")
+        time.sleep(1) # Pequeña pausa para leer mejor en consola
+
+    print("🚀 INICIANDO BATERÍA DE PRUEBAS DE FITNESS BOT 🚀")
+
+    # 1. PRUEBA DE SALUDO
+    imprimir_test("Saludo Inicial", "saludar", [])
+
+    # 2. PRUEBA DE MÚSCULO GRANDE (CON SUBDIVISIONES)
+    imprimir_test("Explicar Pectoral", "explicar musculo", ["Pectoral"])
+
+    # 3. PRUEBA DE MÚSCULO PEQUEÑO
+    imprimir_test("Explicar Bíceps", "explicar musculo", ["Bíceps"])
+
+    # 4. PRUEBA DE PORCIÓN ESPECÍFICA (Detalle técnico)
+    # Probamos si detecta la "Cabeza Lateral" del Tríceps
+    imprimir_test("Explicar Porción (Tríceps Lateral)", "explicar porcion", ["Tríceps", "Cabeza Lateral (Externa)"])
+
+    # 5. PRUEBA DE EJERCICIO AGRUPADO (Press Banca)
+    imprimir_test("Explicar Press Banca", "explicar ejercicio", ["Press de Banca Plano"])
+
+    # 6. PRUEBA DE VARIANTE ESPECÍFICA (Diferencia entre Barra y Mancuerna)
+    imprimir_test("Explicar Variante (Banca con Mancuernas)", "explicar variante", ["Press de Banca Plano", "Mancuernas"])
+
+    # 7. COMPARACIÓN DE EJERCICIOS (Lógica de Rutina)
+    # Compuesto (Sentadilla) vs Aislamiento (Extensión) -> Debería sugerir primero la Sentadilla
+    imprimir_test("Comparar Squat vs Extensión", "comparar ejercicios", ["Sentadilla (Squat)", "Extensión de Rodilla"])
+
+    # 8. COMPARACIÓN DE MÚSCULOS (Antagonistas)
+    imprimir_test("Comparar Pecho vs Espalda", "comparar musculos", ["Pectoral", "Dorsal Ancho"])
+
+    # 9. RECOMENDACIÓN (Filtro por tipo)
+    imprimir_test("Sugerir Ejercicios Compuestos para Pierna", "recomendar ejercicio", ["Cuádriceps", "Compuesto"])
+
+    # 10. ERROR INTENCIONADO (Para ver cómo maneja fallos)
+    imprimir_test("Prueba de Error (Músculo inexistente)", "explicar musculo", ["Músculo Inventado"])
+
+    print("🏁 PRUEBAS FINALIZADAS 🏁")
