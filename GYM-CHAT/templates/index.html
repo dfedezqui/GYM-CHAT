@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GYMCHAT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymCore AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <div class="chat-container">
-        <header class="chat-header">GYM Chat</header>
-        <div id="chat" class="chat-window"></div>
-        <form id="chat-form" class="chat-form">
-            <input
-                type="text"
-                id="input-message"
-                placeholder="Escribe tu mensaje..."
-                autocomplete="off"
-                required
-            />
-            <button type="submit">Enviar</button>
-        </form>
+
+    <div class="ambient-glow"></div>
+
+    <div class="main-container">
+        <header>
+            <div class="status-dot"></div>
+            <h1>GYM<strong>CORE</strong></h1>
+        </header>
+
+        <div id="chat-window" class="chat-area">
+            <div class="message bot intro">
+                <div class="bubble">
+                    <span class="bot-icon">⚡</span>
+                    <p>Sistema listo. Pregúntame sobre ejercicios, músculos o técnica.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-wrapper">
+            <form id="chat-form">
+                <input type="text" id="input-message" placeholder="Escribe aquí..." autocomplete="off">
+                <button type="submit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
 
-    <!-- Cliente Socket.IO -->
     <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
-
-    <!-- Tu script para manejar chat -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

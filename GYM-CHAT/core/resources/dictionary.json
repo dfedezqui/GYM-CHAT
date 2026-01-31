@@ -1,0 +1,272 @@
+{
+  "musculos": [
+    {
+      "id": "pectoral",
+      "nombre_canonico": "Pectoral",
+      "inputs": [
+        "pectoral", "pectorales", "pecho", "pechera", "tetas", "chest", 
+        "pechito", "zona pectoral", "torax"
+      ]
+    },
+    {
+      "id": "biceps",
+      "nombre_canonico": "Bíceps",
+      "inputs": [
+        "biceps", "bíceps", "brazo", "bola", "conejo", "bicep", "brazos", 
+        "porra", "gunz"
+      ]
+    },
+    {
+      "id": "triceps",
+      "nombre_canonico": "Tríceps",
+      "inputs": [
+        "triceps", "tríceps", "tricep", "parte de atras del brazo", "herradura", 
+        "brazo posterior"
+      ]
+    },
+    {
+      "id": "deltoides",
+      "nombre_canonico": "Deltoides",
+      "inputs": [
+        "deltoides", "deltoide", "hombro", "hombros", "coco", "cocos", 
+        "shoulders", "delt", "delts"
+      ]
+    },
+    {
+      "id": "dorsal",
+      "nombre_canonico": "Dorsal",
+      "inputs": [
+        "dorsal", "dorsales", "espalda", "lomo", "alas", "back", "lats", 
+        "latisimos", "zona dorsal"
+      ]
+    },
+    {
+      "id": "trapecio",
+      "nombre_canonico": "Trapecio",
+      "inputs": [
+        "trapecio", "trapecios", "cuello", "traps", "parte superior espalda", 
+        "trapezoidal"
+      ]
+    },
+    {
+      "id": "antebrazo",
+      "nombre_canonico": "Antebrazo",
+      "inputs": [
+        "antebrazo", "antebrazos", "forearm", "forearms", "agarre", "muñeca"
+      ]
+    },
+    {
+      "id": "cuadriceps",
+      "nombre_canonico": "Cuádriceps",
+      "inputs": [
+        "cuadriceps", "cuádriceps", "pierna", "piernas", "muslo", "muslos", 
+        "quads", "pata", "patas", "parte delantera pierna"
+      ]
+    },
+    {
+      "id": "isquiosurales",
+      "nombre_canonico": "Isquiosurales",
+      "inputs": [
+        "isquiosurales", "isquios", "femoral", "femorales", "biceps femoral", 
+        "hamstrings", "hams", "parte posterior pierna", "pierna atras"
+      ]
+    },
+    {
+      "id": "gemelo",
+      "nombre_canonico": "Gemelo",
+      "inputs": [
+        "gemelo", "gemelos", "pantorrilla", "pantorrillas", "chamorro", 
+        "calves", "triceps sural", "soleo"
+      ]
+    },
+    {
+      "id": "gluteo",
+      "nombre_canonico": "Glúteo",
+      "inputs": [
+        "gluteo", "glúteo", "gluteos", "culo", "nalgas", "trasero", "pompi", 
+        "glutes", "booty", "cadera posterior"
+      ]
+    },
+    {
+      "id": "abdominales",
+      "nombre_canonico": "Abdominales",
+      "inputs": [
+        "abdominales", "abdominal", "abs", "abdomen", "barriga", "panza", 
+        "core", "six pack", "tableta", "chocolatina", "oblicuos"
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "press_banca",
+      "nombre_canonico": "Press de Banca Plano",
+      "inputs": [
+        "press de banca plano", "press banca", "bench press", "banca plana", 
+        "banca", "press pecho", "flat bench"
+      ]
+    },
+    {
+      "id": "press_inclinado",
+      "nombre_canonico": "Press Inclinado",
+      "inputs": [
+        "press inclinado", "banca inclinada", "incline press", "press pecho superior", 
+        "inclinado"
+      ]
+    },
+    {
+      "id": "aperturas",
+      "nombre_canonico": "Aperturas (Flyes)",
+      "inputs": [
+        "aperturas", "flyes", "cristos", "peck deck", "mariposa", "vuelos pecho", 
+        "flies"
+      ]
+    },
+    {
+      "id": "press_militar",
+      "nombre_canonico": "Press Militar / Vertical",
+      "inputs": [
+        "press militar", "press vertical", "press hombro", "military press", 
+        "overhead press", "ohp", "militar"
+      ]
+    },
+    {
+      "id": "elevaciones_laterales",
+      "nombre_canonico": "Elevaciones Laterales",
+      "inputs": [
+        "elevaciones laterales", "vuelos laterales", "pajaros laterales", 
+        "lateral raises", "laterales"
+      ]
+    },
+    {
+      "id": "sentadilla",
+      "nombre_canonico": "Sentadilla (Squat)",
+      "inputs": [
+        "sentadilla", "sentadillas", "squat", "squats", "agachada", 
+        "sentadilla libre", "back squat"
+      ]
+    },
+    {
+      "id": "prensa",
+      "nombre_canonico": "Prensa de Piernas",
+      "inputs": [
+        "prensa de piernas", "prensa", "leg press", "maquina de prensa", 
+        "empuje piernas"
+      ]
+    },
+    {
+      "id": "extension_rodilla",
+      "nombre_canonico": "Extensión de Rodilla",
+      "inputs": [
+        "extension de rodilla", "extensiones de cuadriceps", "leg extension", 
+        "sillon de cuadriceps", "maquina de extensiones"
+      ]
+    },
+    {
+      "id": "peso_muerto_rumano",
+      "nombre_canonico": "Peso Muerto Rumano",
+      "inputs": [
+        "peso muerto rumano", "rdl", "romanian deadlift", "peso muerto piernas rigidas", 
+        "peso muerto"
+      ]
+    },
+    {
+      "id": "curl_biceps",
+      "nombre_canonico": "Curl de Bíceps",
+      "inputs": [
+        "curl de biceps", "curl de bíceps", "curl", "flexion de codo", 
+        "bicep curl", "levantamiento de biceps"
+      ]
+    },
+    {
+      "id": "extension_triceps",
+      "nombre_canonico": "Extensiones de Tríceps",
+      "inputs": [
+        "extensiones de triceps", "extension triceps", "jalon triceps", 
+        "tricep pushdown", "rompecraneos", "frances"
+      ]
+    },
+    {
+      "id": "dominadas",
+      "nombre_canonico": "Dominadas",
+      "inputs": [
+        "dominadas", "dominada", "pull ups", "pullups", "barras", "chin ups"
+      ]
+    },
+    {
+      "id": "remo_barra",
+      "nombre_canonico": "Remo con Barra",
+      "inputs": [
+        "remo con barra", "barbell row", "remo", "remo inclinado", "bent over row"
+      ]
+    }
+  ],
+  "equipamiento": [
+    {
+      "id": "barra",
+      "nombre_canonico": "Barra",
+      "inputs": ["barra", "barbell", "libre", "barra olimpica", "peso libre"]
+    },
+    {
+      "id": "mancuernas",
+      "nombre_canonico": "Mancuernas",
+      "inputs": ["mancuernas", "mancuerna", "dumbbells", "pesas", "individuales"]
+    },
+    {
+      "id": "maquina",
+      "nombre_canonico": "Máquina",
+      "inputs": ["maquina", "máquina", "machine", "guiada", "aparato"]
+    },
+    {
+      "id": "polea",
+      "nombre_canonico": "Polea",
+      "inputs": ["polea", "poleas", "cable", "cables", "torre"]
+    },
+    {
+      "id": "multipower",
+      "nombre_canonico": "Multipower",
+      "inputs": ["multipower", "smith", "maquina smith", "barra guiada"]
+    },
+    {
+      "id": "corporal",
+      "nombre_canonico": "Peso Corporal",
+      "inputs": ["peso corporal", "calistenia", "autocargas", "sin peso", "bodyweight"]
+    },
+    {
+      "id": "cuerda",
+      "nombre_canonico": "Cuerda",
+      "inputs": ["cuerda", "rope", "lazo"]
+    }
+  ],
+  "porciones": [
+    {
+      "id": "superior",
+      "nombre_canonico": "Superior",
+      "inputs": ["superior", "alta", "arriba", "clavicular", "upper"]
+    },
+    {
+      "id": "medio",
+      "nombre_canonico": "Medio",
+      "inputs": ["medio", "media", "central", "sternal", "middle"]
+    },
+    {
+      "id": "inferior",
+      "nombre_canonico": "Inferior",
+      "inputs": ["inferior", "baja", "abajo", "costal", "lower"]
+    },
+    {
+      "id": "cabeza_larga",
+      "nombre_canonico": "Cabeza Larga",
+      "inputs": ["cabeza larga", "porcion larga", "long head", "externa"]
+    },
+    {
+      "id": "cabeza_corta",
+      "nombre_canonico": "Cabeza Corta",
+      "inputs": ["cabeza corta", "porcion corta", "short head", "interna"]
+    },
+    {
+      "id": "lateral",
+      "nombre_canonico": "Lateral",
+      "inputs": ["lateral", "lado", "externa", "side"]
+    }
+  ]
+}
