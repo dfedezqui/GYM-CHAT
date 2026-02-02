@@ -34,7 +34,7 @@
     },
     {
       "id": "dorsal",
-      "nombre_canonico": "Dorsal",
+      "nombre_canonico": "Dorsal Ancho",
       "inputs": [
         "dorsal", "dorsales", "espalda", "lomo", "alas", "back", "lats", 
         "latisimos", "zona dorsal"
@@ -64,8 +64,8 @@
       ]
     },
     {
-      "id": "isquiosurales",
-      "nombre_canonico": "Isquiosurales",
+      "id": "Isquiotibial",
+      "nombre_canonico": "Isquiotibial",
       "inputs": [
         "isquiosurales", "isquios", "femoral", "femorales", "biceps femoral", 
         "hamstrings", "hams", "parte posterior pierna", "pierna atras"
@@ -73,7 +73,7 @@
     },
     {
       "id": "gemelo",
-      "nombre_canonico": "Gemelo",
+      "nombre_canonico": "Pantorrilla",
       "inputs": [
         "gemelo", "gemelos", "pantorrilla", "pantorrillas", "chamorro", 
         "calves", "triceps sural", "soleo"
@@ -163,7 +163,7 @@
     },
     {
       "id": "peso_muerto_rumano",
-      "nombre_canonico": "Peso Muerto Rumano",
+      "nombre_canonico": "Bisagra de Cadera (Peso Muerto)",
       "inputs": [
         "peso muerto rumano", "rdl", "romanian deadlift", "peso muerto piernas rigidas", 
         "peso muerto"
@@ -171,7 +171,7 @@
     },
     {
       "id": "curl_biceps",
-      "nombre_canonico": "Curl de Bíceps",
+      "nombre_canonico": "Curl de Bíceps Supino",
       "inputs": [
         "curl de biceps", "curl de bíceps", "curl", "flexion de codo", 
         "bicep curl", "levantamiento de biceps"
@@ -179,7 +179,7 @@
     },
     {
       "id": "extension_triceps",
-      "nombre_canonico": "Extensiones de Tríceps",
+      "nombre_canonico": "Extensión de Tríceps (Pushdown)",
       "inputs": [
         "extensiones de triceps", "extension triceps", "jalon triceps", 
         "tricep pushdown", "rompecraneos", "frances"
@@ -187,16 +187,23 @@
     },
     {
       "id": "dominadas",
-      "nombre_canonico": "Dominadas",
+      "nombre_canonico": "Jalones y Dominadas",
       "inputs": [
         "dominadas", "dominada", "pull ups", "pullups", "barras", "chin ups"
       ]
     },
     {
       "id": "remo_barra",
-      "nombre_canonico": "Remo con Barra",
+      "nombre_canonico": "Remos (Rows)",
       "inputs": [
         "remo con barra", "barbell row", "remo", "remo inclinado", "bent over row"
+      ]
+    },
+    {
+      "id": "hip_thrust",
+      "nombre_canonico": "Empuje de Cadera (Hip Thrust)",
+      "inputs": [
+        "hip thrust", "empuje de cadera", "puente de gluteo", "hipthrust"
       ]
     }
   ],
@@ -213,44 +220,44 @@
     },
     {
       "id": "maquina",
-      "nombre_canonico": "Máquina",
+      "nombre_canonico": "Máquina / Multipower",
       "inputs": ["maquina", "máquina", "machine", "guiada", "aparato"]
     },
     {
       "id": "polea",
-      "nombre_canonico": "Polea",
+      "nombre_canonico": "Poleas (Cruce)",
       "inputs": ["polea", "poleas", "cable", "cables", "torre"]
     },
     {
       "id": "multipower",
-      "nombre_canonico": "Multipower",
+      "nombre_canonico": "Máquina / Multipower",
       "inputs": ["multipower", "smith", "maquina smith", "barra guiada"]
     },
     {
       "id": "corporal",
-      "nombre_canonico": "Peso Corporal",
+      "nombre_canonico": "Dominadas (Peso corporal)",
       "inputs": ["peso corporal", "calistenia", "autocargas", "sin peso", "bodyweight"]
     },
     {
       "id": "cuerda",
-      "nombre_canonico": "Cuerda",
+      "nombre_canonico": "Polea con Cuerda",
       "inputs": ["cuerda", "rope", "lazo"]
     }
   ],
   "porciones": [
     {
       "id": "superior",
-      "nombre_canonico": "Superior",
+      "nombre_canonico": "Superior (Clavicular)",
       "inputs": ["superior", "alta", "arriba", "clavicular", "upper"]
     },
     {
       "id": "medio",
-      "nombre_canonico": "Medio",
+      "nombre_canonico": "Medio (Esternal)",
       "inputs": ["medio", "media", "central", "sternal", "middle"]
     },
     {
       "id": "inferior",
-      "nombre_canonico": "Inferior",
+      "nombre_canonico": "Inferior (Costal)",
       "inputs": ["inferior", "baja", "abajo", "costal", "lower"]
     },
     {
@@ -260,12 +267,12 @@
     },
     {
       "id": "cabeza_corta",
-      "nombre_canonico": "Cabeza Corta",
+      "nombre_canonico": "Cabeza Corta (Interna)",
       "inputs": ["cabeza corta", "porcion corta", "short head", "interna"]
     },
     {
       "id": "lateral",
-      "nombre_canonico": "Lateral",
+      "nombre_canonico": "Cabeza Lateral (Externa)",
       "inputs": ["lateral", "lado", "externa", "side"]
     }
   ]
