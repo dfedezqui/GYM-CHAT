@@ -29,6 +29,13 @@ def handle_message(msg):
     respuesta = devolver_mensaje(funcion, argumentos)
     send(respuesta)
 
+@socketIO.on('direct_message')
+def handle_direct_message(data):
+    funcion = data.get('funcion')
+    argumentos = data.get('argumento')
+    respuesta = devolver_mensaje(funcion, argumentos)
+    send(respuesta)
+
 if __name__ == '__main__':
     if arg:
         port = int(os.environ.get('PORT', 5000))

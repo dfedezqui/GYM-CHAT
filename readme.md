@@ -49,15 +49,19 @@ Contains the core logic for processing user input and returning meaningful respo
 GYM-CHAT/
 ├── GYM-CHAT/
 │   ├── app.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   └── resources/
+│   │       └── dictionary.json
+│   ├── analyzer/
 │   │   ├── __init__.py
 │   │   └── analyzer.py
 │   ├── data/
 │   │   ├── __init__.py
-│   │   └── loader.py
-│   └── resources/
-│   │   ├── entities_spacy.json
-│   │   ├── exercises.json
-│   │   └── muscles.json
+│   │   ├── loader.py
+│   │   └── resources/
+│   │       ├── exercises.json
+│   │       └── muscles.json
 │   ├── static/
 │   │   ├── css/
 │   │   │   └── style.css
@@ -69,6 +73,7 @@ GYM-CHAT/
 ├── LICENSE
 ├── readme.md
 └── requirements.txt
+
 
 
 ```

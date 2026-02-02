@@ -40,6 +40,13 @@ def no_entender():
         "¡Inténtalo de nuevo!"
     )
 
+def mensaje_Info():
+    return (
+        """ Puedo ayudarte a entender músculos y ejercicios, explicar porciones musculares y variantes, comparar músculos o ejercicios y recomendarte ejercicios según tu objetivo.
+            También puedo darte información general, saludarte o despedirme.
+            Escríbeme lo que necesites 💪"""
+    )
+
 # ==========================================
 # FUNCIONES DE MÚSCULOS (Estilo Conversacional)
 # ==========================================
@@ -237,6 +244,7 @@ def devolver_mensaje(funcion, argumentos):
         "saludar": saludar_usuario,
         "despedir": despedir_usuario,
         "no entender": no_entender,
+        "info" : mensaje_Info,
         "explicar musculo": explicar_musculo,
         "explicar porcion": explicar_porcion_muscular,
         "comparar musculos": comparar_musculos,

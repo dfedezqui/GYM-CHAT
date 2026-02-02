@@ -20,6 +20,7 @@ body {
     justify-content: center;
 }
 
+/* Fondo animado sutil */
 .ambient-glow {
     position: fixed;
     top: -20%;
@@ -72,6 +73,7 @@ h1 strong { color: var(--primary); }
     box-shadow: 0 0 10px var(--primary);
 }
 
+/* Área de Chat */
 .chat-area {
     flex: 1;
     overflow-y: auto;
@@ -97,11 +99,13 @@ h1 strong { color: var(--primary); }
 .bubble {
     padding: 15px 20px;
     border-radius: 20px;
-    font-size: 0.95rem; /* Tamaño de respuesta */
+    font-size: 0.95rem;
     line-height: 1.6;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
+/* Burbuja del Bot y Negritas en Verde */
 .message.bot .bubble {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--border);
@@ -109,6 +113,12 @@ h1 strong { color: var(--primary); }
     color: #eee;
 }
 
+.message.bot .bubble strong {
+    color: var(--primary) !important;
+    font-weight: 700;
+}
+
+/* Burbuja del Usuario */
 .message.user .bubble {
     background: #fff;
     color: #000;
@@ -123,6 +133,48 @@ h1 strong { color: var(--primary); }
     color: var(--primary);
 }
 
+/* BOTONES DINÁMICOS (Shortcuts) */
+.shortcuts-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding-left: 45px;
+    animation: slideUp 0.3s ease;
+}
+
+.btn-chip {
+    background: var(--primary) !important;
+    color: #000 !important;
+    border: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px !important; /* Bloque grande */
+    min-width: 120px;
+    font-size: 1rem !important; /* Letra igual a respuesta */
+    font-weight: 700 !important;
+    border-radius: 12px !important; /* Estilo Gym moderno */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(173, 250, 29, 0.2);
+    white-space: nowrap;
+}
+
+.btn-chip:hover {
+    background: #000 !important;
+    color: var(--primary) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px var(--primary);
+    border: 1px solid var(--primary) !important;
+}
+
+.btn-chip:active {
+    transform: scale(0.95);
+}
+
+/* INPUT Y FORMULARIO */
 .input-wrapper {
     position: absolute;
     bottom: 30px;
@@ -149,12 +201,12 @@ input {
     border: none;
     padding: 12px 15px;
     color: #fff;
-    font-size: 0.95rem; /* IGUALADO AL TAMAÑO DE RESPUESTA */
+    font-size: 0.95rem; /* Igualado al tamaño de respuesta */
     font-family: 'Inter', sans-serif;
     outline: none;
 }
 
-button {
+button[type="submit"] {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -165,6 +217,18 @@ button {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--primary);
+}
+
+button[type="submit"] svg {
+    width: 20px;
+    height: 20px;
+    stroke: #000;
 }
 
 @keyframes slideUp {
