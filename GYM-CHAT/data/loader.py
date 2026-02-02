@@ -40,6 +40,13 @@ def no_entender():
         "¡Inténtalo de nuevo!"
     )
 
+def mensaje_Info():
+    return (
+        """ Puedo ayudarte a entender músculos y ejercicios, explicar porciones musculares y variantes, comparar músculos o ejercicios y recomendarte ejercicios según tu objetivo.
+            También puedo darte información general, saludarte o despedirme.
+            Escríbeme lo que necesites 💪"""
+    )
+
 # ==========================================
 # FUNCIONES DE MÚSCULOS (Estilo Conversacional)
 # ==========================================
@@ -237,6 +244,7 @@ def devolver_mensaje(funcion, argumentos):
         "saludar": saludar_usuario,
         "despedir": despedir_usuario,
         "no entender": no_entender,
+        "info" : mensaje_Info,
         "explicar musculo": explicar_musculo,
         "explicar porcion": explicar_porcion_muscular,
         "comparar musculos": comparar_musculos,
@@ -256,57 +264,3 @@ def devolver_mensaje(funcion, argumentos):
              return "¡Ups! Me has dado un número de argumentos incorrecto para esa pregunta. Inténtalo de nuevo."
     
     return f"Vaya, esa función '{funcion}' no me suena de nada."
-
-
-
-# ==========================================
-# BLOQUE MAIN DE PRUEBAS (Test de Personalidad)
-# ==========================================
-if __name__ == "__main__":
-    import time
-
-    def imprimir_test(titulo, funcion, args):
-        print(f"\n{'='*60}")
-        print(f"🧪 TEST: {titulo}")
-        print(f"❓ Input: {funcion} -> {args}")
-        print(f"{'-'*60}")
-        respuesta = devolver_mensaje(funcion, args)
-        print(f"🤖 BOT:\n{respuesta}")
-        print(f"{'='*60}\n")
-        time.sleep(1) # Pequeña pausa para leer mejor en consola
-
-    print("🚀 INICIANDO BATERÍA DE PRUEBAS DE FITNESS BOT 🚀")
-
-    # 1. PRUEBA DE SALUDO
-    imprimir_test("Saludo Inicial", "saludar", [])
-
-    # 2. PRUEBA DE MÚSCULO GRANDE (CON SUBDIVISIONES)
-    imprimir_test("Explicar Pectoral", "explicar musculo", ["Pectoral"])
-
-    # 3. PRUEBA DE MÚSCULO PEQUEÑO
-    imprimir_test("Explicar Bíceps", "explicar musculo", ["Bíceps"])
-
-    # 4. PRUEBA DE PORCIÓN ESPECÍFICA (Detalle técnico)
-    # Probamos si detecta la "Cabeza Lateral" del Tríceps
-    imprimir_test("Explicar Porción (Tríceps Lateral)", "explicar porcion", ["Tríceps", "Cabeza Lateral (Externa)"])
-
-    # 5. PRUEBA DE EJERCICIO AGRUPADO (Press Banca)
-    imprimir_test("Explicar Press Banca", "explicar ejercicio", ["Press de Banca Plano"])
-
-    # 6. PRUEBA DE VARIANTE ESPECÍFICA (Diferencia entre Barra y Mancuerna)
-    imprimir_test("Explicar Variante (Banca con Mancuernas)", "explicar variante", ["Press de Banca Plano", "Mancuernas"])
-
-    # 7. COMPARACIÓN DE EJERCICIOS (Lógica de Rutina)
-    # Compuesto (Sentadilla) vs Aislamiento (Extensión) -> Debería sugerir primero la Sentadilla
-    imprimir_test("Comparar Squat vs Extensión", "comparar ejercicios", ["Sentadilla (Squat)", "Extensión de Rodilla"])
-
-    # 8. COMPARACIÓN DE MÚSCULOS (Antagonistas)
-    imprimir_test("Comparar Pecho vs Espalda", "comparar musculos", ["Pectoral", "Dorsal Ancho"])
-
-    # 9. RECOMENDACIÓN (Filtro por tipo)
-    imprimir_test("Sugerir Ejercicios Compuestos para Pierna", "recomendar ejercicio", ["Cuádriceps", "Compuesto"])
-
-    # 10. ERROR INTENCIONADO (Para ver cómo maneja fallos)
-    imprimir_test("Prueba de Error (Músculo inexistente)", "explicar musculo", ["Músculo Inventado"])
-
-    print("🏁 PRUEBAS FINALIZADAS 🏁")
